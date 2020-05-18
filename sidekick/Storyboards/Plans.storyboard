@@ -6,6 +6,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="BalooBhai2-Medium.ttf">
+            <string>BalooBhai2-Medium</string>
+        </array>
+        <array key="Muli-Light.ttf">
+            <string>Muli-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Plans View Controller-->
         <scene sceneID="jtC-X5-KFL">
@@ -15,15 +23,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Plans Page Chats" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="trj-uQ-RPs">
-                                <rect key="frame" x="72.5" y="426.5" width="269" height="43"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVR-f0-TaN">
+                                <rect key="frame" x="71" y="475.5" width="272.5" height="23"/>
+                                <fontDescription key="fontDescription" name="Muli-Light" family="Muli" pointSize="18"/>
+                                <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVR-f0-TaN">
-                                <rect key="frame" x="99.5" y="477.5" width="215" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Plans Page Chats" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="trj-uQ-RPs">
+                                <rect key="frame" x="73" y="382" width="269" height="43"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" name="BalooBhai2-Medium" family="Baloo Bhai 2" pointSize="24"/>
+                                <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

@@ -16,6 +16,29 @@
 		F32A798F24721F8600F0D1AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32A798D24721F8600F0D1AF /* LaunchScreen.storyboard */; };
 		F32A799A24721F8600F0D1AF /* sidekickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32A799924721F8600F0D1AF /* sidekickTests.swift */; };
 		F32A79A524721F8600F0D1AF /* sidekickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32A79A424721F8600F0D1AF /* sidekickUITests.swift */; };
+		F3D1235224731E36008389D4 /* Muli-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1233B24731D01008389D4 /* Muli-Italic-VariableFont_wght.ttf */; };
+		F3D1235324731E39008389D4 /* Muli-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1233C24731D01008389D4 /* Muli-VariableFont_wght.ttf */; };
+		F3D1235424731E41008389D4 /* Muli-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1234D24731D01008389D4 /* Muli-LightItalic.ttf */; };
+		F3D1235524731E44008389D4 /* Muli-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1234C24731D01008389D4 /* Muli-Regular.ttf */; };
+		F3D1235624731E47008389D4 /* Muli-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1234B24731D01008389D4 /* Muli-Light.ttf */; };
+		F3D1235724731E4A008389D4 /* Muli-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1234A24731D01008389D4 /* Muli-BlackItalic.ttf */; };
+		F3D1235824731E4C008389D4 /* Muli-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1234924731D01008389D4 /* Muli-SemiBoldItalic.ttf */; };
+		F3D1235924731E4F008389D4 /* Muli-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1234824731D01008389D4 /* Muli-SemiBold.ttf */; };
+		F3D1235A24731E52008389D4 /* Muli-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1234724731D01008389D4 /* Muli-Italic.ttf */; };
+		F3D1235B24731E54008389D4 /* Muli-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1234624731D01008389D4 /* Muli-ExtraBoldItalic.ttf */; };
+		F3D1235C24731E57008389D4 /* Muli-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1234524731D01008389D4 /* Muli-Bold.ttf */; };
+		F3D1235D24731E59008389D4 /* Muli-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1234424731D01008389D4 /* Muli-ExtraBold.ttf */; };
+		F3D1235E24731E5B008389D4 /* Muli-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1234324731D01008389D4 /* Muli-MediumItalic.ttf */; };
+		F3D1235F24731E5E008389D4 /* Muli-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1234224731D01008389D4 /* Muli-Medium.ttf */; };
+		F3D1236024731E61008389D4 /* Muli-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1234124731D01008389D4 /* Muli-Black.ttf */; };
+		F3D1236124731E63008389D4 /* Muli-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1234024731D01008389D4 /* Muli-BoldItalic.ttf */; };
+		F3D1236224731E66008389D4 /* Muli-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1233F24731D01008389D4 /* Muli-ExtraLightItalic.ttf */; };
+		F3D1236324731E68008389D4 /* Muli-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1233E24731D01008389D4 /* Muli-ExtraLight.ttf */; };
+		F3D1236C2473227B008389D4 /* BalooBhai2-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D123672473227B008389D4 /* BalooBhai2-ExtraBold.ttf */; };
+		F3D1236D2473227B008389D4 /* BalooBhai2-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D123682473227B008389D4 /* BalooBhai2-Regular.ttf */; };
+		F3D1236E2473227B008389D4 /* BalooBhai2-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D123692473227B008389D4 /* BalooBhai2-SemiBold.ttf */; };
+		F3D1236F2473227B008389D4 /* BalooBhai2-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1236A2473227B008389D4 /* BalooBhai2-Medium.ttf */; };
+		F3D123702473227B008389D4 /* BalooBhai2-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1236B2473227B008389D4 /* BalooBhai2-Bold.ttf */; };
 		F3FC044C24726A74006BCE6A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC044B24726A74006BCE6A /* ProfileViewController.swift */; };
 		F3FC044E24726FAE006BCE6A /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC044D24726FAE006BCE6A /* AppConstants.swift */; };
 		F3FC045024727056006BCE6A /* RgbaUIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC044F24727056006BCE6A /* RgbaUIColorExtension.swift */; };
@@ -60,6 +83,31 @@
 		F32A79A024721F8600F0D1AF /* sidekickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sidekickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32A79A424721F8600F0D1AF /* sidekickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sidekickUITests.swift; sourceTree = "<group>"; };
 		F32A79A624721F8600F0D1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D1233B24731D01008389D4 /* Muli-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		F3D1233C24731D01008389D4 /* Muli-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		F3D1233E24731D01008389D4 /* Muli-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-ExtraLight.ttf"; sourceTree = "<group>"; };
+		F3D1233F24731D01008389D4 /* Muli-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		F3D1234024731D01008389D4 /* Muli-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F3D1234124731D01008389D4 /* Muli-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Black.ttf"; sourceTree = "<group>"; };
+		F3D1234224731D01008389D4 /* Muli-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Medium.ttf"; sourceTree = "<group>"; };
+		F3D1234324731D01008389D4 /* Muli-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-MediumItalic.ttf"; sourceTree = "<group>"; };
+		F3D1234424731D01008389D4 /* Muli-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F3D1234524731D01008389D4 /* Muli-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Bold.ttf"; sourceTree = "<group>"; };
+		F3D1234624731D01008389D4 /* Muli-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		F3D1234724731D01008389D4 /* Muli-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Italic.ttf"; sourceTree = "<group>"; };
+		F3D1234824731D01008389D4 /* Muli-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-SemiBold.ttf"; sourceTree = "<group>"; };
+		F3D1234924731D01008389D4 /* Muli-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		F3D1234A24731D01008389D4 /* Muli-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-BlackItalic.ttf"; sourceTree = "<group>"; };
+		F3D1234B24731D01008389D4 /* Muli-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Light.ttf"; sourceTree = "<group>"; };
+		F3D1234C24731D01008389D4 /* Muli-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Regular.ttf"; sourceTree = "<group>"; };
+		F3D1234D24731D01008389D4 /* Muli-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-LightItalic.ttf"; sourceTree = "<group>"; };
+		F3D1234E24731D01008389D4 /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		F3D1234F24731D01008389D4 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		F3D123672473227B008389D4 /* BalooBhai2-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooBhai2-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F3D123682473227B008389D4 /* BalooBhai2-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooBhai2-Regular.ttf"; sourceTree = "<group>"; };
+		F3D123692473227B008389D4 /* BalooBhai2-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooBhai2-SemiBold.ttf"; sourceTree = "<group>"; };
+		F3D1236A2473227B008389D4 /* BalooBhai2-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooBhai2-Medium.ttf"; sourceTree = "<group>"; };
+		F3D1236B2473227B008389D4 /* BalooBhai2-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BalooBhai2-Bold.ttf"; sourceTree = "<group>"; };
 		F3FC044B24726A74006BCE6A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F3FC044D24726FAE006BCE6A /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		F3FC044F24727056006BCE6A /* RgbaUIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RgbaUIColorExtension.swift; sourceTree = "<group>"; };
@@ -119,17 +167,18 @@
 		F32A797F24721F8500F0D1AF /* sidekick */ = {
 			isa = PBXGroup;
 			children = (
+				F32A798D24721F8600F0D1AF /* LaunchScreen.storyboard */,
 				F3FC045724727E65006BCE6A /* Storyboards */,
 				F32A798024721F8500F0D1AF /* AppDelegate.swift */,
 				F3FC044D24726FAE006BCE6A /* AppConstants.swift */,
-				F3FC044F24727056006BCE6A /* RgbaUIColorExtension.swift */,
-				F32A798224721F8500F0D1AF /* SceneDelegate.swift */,
 				F32A798424721F8500F0D1AF /* HomeViewController.swift */,
 				F3FC044B24726A74006BCE6A /* ProfileViewController.swift */,
 				F32A798624721F8500F0D1AF /* PlansViewController.swift */,
+				F32A798224721F8500F0D1AF /* SceneDelegate.swift */,
+				F3FC044F24727056006BCE6A /* RgbaUIColorExtension.swift */,
 				F32A798B24721F8600F0D1AF /* Assets.xcassets */,
-				F32A798D24721F8600F0D1AF /* LaunchScreen.storyboard */,
 				F32A799024721F8600F0D1AF /* Info.plist */,
+				F3D1233924731CF3008389D4 /* Fonts */,
 			);
 			path = sidekick;
 			sourceTree = "<group>";
@@ -150,6 +199,62 @@
 				F32A79A624721F8600F0D1AF /* Info.plist */,
 			);
 			path = sidekickUITests;
+			sourceTree = "<group>";
+		};
+		F3D1233924731CF3008389D4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F3D1237124732297008389D4 /* BalooBhai2 */,
+				F3D1233A24731D01008389D4 /* Muli */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F3D1233A24731D01008389D4 /* Muli */ = {
+			isa = PBXGroup;
+			children = (
+				F3D1233B24731D01008389D4 /* Muli-Italic-VariableFont_wght.ttf */,
+				F3D1233C24731D01008389D4 /* Muli-VariableFont_wght.ttf */,
+				F3D1233D24731D01008389D4 /* static */,
+				F3D1234E24731D01008389D4 /* OFL.txt */,
+				F3D1234F24731D01008389D4 /* README.txt */,
+			);
+			path = Muli;
+			sourceTree = "<group>";
+		};
+		F3D1233D24731D01008389D4 /* static */ = {
+			isa = PBXGroup;
+			children = (
+				F3D1233E24731D01008389D4 /* Muli-ExtraLight.ttf */,
+				F3D1233F24731D01008389D4 /* Muli-ExtraLightItalic.ttf */,
+				F3D1234024731D01008389D4 /* Muli-BoldItalic.ttf */,
+				F3D1234124731D01008389D4 /* Muli-Black.ttf */,
+				F3D1234224731D01008389D4 /* Muli-Medium.ttf */,
+				F3D1234324731D01008389D4 /* Muli-MediumItalic.ttf */,
+				F3D1234424731D01008389D4 /* Muli-ExtraBold.ttf */,
+				F3D1234524731D01008389D4 /* Muli-Bold.ttf */,
+				F3D1234624731D01008389D4 /* Muli-ExtraBoldItalic.ttf */,
+				F3D1234724731D01008389D4 /* Muli-Italic.ttf */,
+				F3D1234824731D01008389D4 /* Muli-SemiBold.ttf */,
+				F3D1234924731D01008389D4 /* Muli-SemiBoldItalic.ttf */,
+				F3D1234A24731D01008389D4 /* Muli-BlackItalic.ttf */,
+				F3D1234B24731D01008389D4 /* Muli-Light.ttf */,
+				F3D1234C24731D01008389D4 /* Muli-Regular.ttf */,
+				F3D1234D24731D01008389D4 /* Muli-LightItalic.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		F3D1237124732297008389D4 /* BalooBhai2 */ = {
+			isa = PBXGroup;
+			children = (
+				F3D1236B2473227B008389D4 /* BalooBhai2-Bold.ttf */,
+				F3D123672473227B008389D4 /* BalooBhai2-ExtraBold.ttf */,
+				F3D1236A2473227B008389D4 /* BalooBhai2-Medium.ttf */,
+				F3D123682473227B008389D4 /* BalooBhai2-Regular.ttf */,
+				F3D123692473227B008389D4 /* BalooBhai2-SemiBold.ttf */,
+			);
+			path = BalooBhai2;
 			sourceTree = "<group>";
 		};
 		F3FC045724727E65006BCE6A /* Storyboards */ = {
@@ -270,15 +375,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D1235924731E4F008389D4 /* Muli-SemiBold.ttf in Resources */,
 				F3FC045B24728151006BCE6A /* SignIn.storyboard in Resources */,
+				F3D1235624731E47008389D4 /* Muli-Light.ttf in Resources */,
 				F3FC045624727D91006BCE6A /* Profile.storyboard in Resources */,
+				F3D1235524731E44008389D4 /* Muli-Regular.ttf in Resources */,
 				F32A798F24721F8600F0D1AF /* LaunchScreen.storyboard in Resources */,
+				F3D1235224731E36008389D4 /* Muli-Italic-VariableFont_wght.ttf in Resources */,
+				F3D1236324731E68008389D4 /* Muli-ExtraLight.ttf in Resources */,
+				F3D1235A24731E52008389D4 /* Muli-Italic.ttf in Resources */,
 				F32A798C24721F8600F0D1AF /* Assets.xcassets in Resources */,
+				F3D1235724731E4A008389D4 /* Muli-BlackItalic.ttf in Resources */,
+				F3D1235824731E4C008389D4 /* Muli-SemiBoldItalic.ttf in Resources */,
 				F3FC04592472813E006BCE6A /* SignUp.storyboard in Resources */,
+				F3D1236C2473227B008389D4 /* BalooBhai2-ExtraBold.ttf in Resources */,
+				F3D1235C24731E57008389D4 /* Muli-Bold.ttf in Resources */,
 				F32A798A24721F8500F0D1AF /* Main.storyboard in Resources */,
+				F3D123702473227B008389D4 /* BalooBhai2-Bold.ttf in Resources */,
+				F3D1236E2473227B008389D4 /* BalooBhai2-SemiBold.ttf in Resources */,
 				F3FC045D24728184006BCE6A /* Onboarding.storyboard in Resources */,
+				F3D1235D24731E59008389D4 /* Muli-ExtraBold.ttf in Resources */,
+				F3D1235F24731E5E008389D4 /* Muli-Medium.ttf in Resources */,
+				F3D1235324731E39008389D4 /* Muli-VariableFont_wght.ttf in Resources */,
+				F3D1236F2473227B008389D4 /* BalooBhai2-Medium.ttf in Resources */,
+				F3D1235B24731E54008389D4 /* Muli-ExtraBoldItalic.ttf in Resources */,
+				F3D1236D2473227B008389D4 /* BalooBhai2-Regular.ttf in Resources */,
+				F3D1236024731E61008389D4 /* Muli-Black.ttf in Resources */,
 				F3FC045424727D86006BCE6A /* Plans.storyboard in Resources */,
 				F3FC045224727D77006BCE6A /* Home.storyboard in Resources */,
+				F3D1235E24731E5B008389D4 /* Muli-MediumItalic.ttf in Resources */,
+				F3D1236124731E63008389D4 /* Muli-BoldItalic.ttf in Resources */,
+				F3D1235424731E41008389D4 /* Muli-LightItalic.ttf in Resources */,
+				F3D1236224731E66008389D4 /* Muli-ExtraLightItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

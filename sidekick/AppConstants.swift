@@ -31,9 +31,8 @@ struct Constants {
           
         }
         struct Font {
-           
-            // example: static let Body = UIFont.systemFont(ofSize: 16, weight: .regular)
-           
+            static let body = UIFont(name: "Muli-Regular", size: 16)
+            static let logo = UIFont(name: "BalooBhai2-Medium", size: 22)
         }
         
     }
