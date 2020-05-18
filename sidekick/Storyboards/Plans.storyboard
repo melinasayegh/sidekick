@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qYH-gJ-CeO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Plans View Controller-->
+        <scene sceneID="jtC-X5-KFL">
+            <objects>
+                <viewController id="qYH-gJ-CeO" customClass="PlansViewController" customModule="sidekick" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yDN-XU-Fa1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Plans Page Chats" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="trj-uQ-RPs">
+                                <rect key="frame" x="72.5" y="426.5" width="269" height="43"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVR-f0-TaN">
+                                <rect key="frame" x="99.5" y="477.5" width="215" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XVR-f0-TaN" firstAttribute="top" secondItem="trj-uQ-RPs" secondAttribute="bottom" constant="8" symbolic="YES" id="0dN-OJ-gh5"/>
+                            <constraint firstAttribute="centerY" secondItem="trj-uQ-RPs" secondAttribute="centerY" id="6gT-kF-hSU"/>
+                            <constraint firstAttribute="centerX" secondItem="trj-uQ-RPs" secondAttribute="centerX" id="BBa-Xg-6ai"/>
+                            <constraint firstItem="XVR-f0-TaN" firstAttribute="centerX" secondItem="trj-uQ-RPs" secondAttribute="centerX" id="yhz-gu-LH0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Lz-nk-UCA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="planInactive" selectedImage="planActive" id="lPc-uY-0vg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yEs-71-b4X" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-720" y="1266"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="planActive" width="25" height="25"/>
+        <image name="planInactive" width="25" height="25"/>
+    </resources>
+</document>

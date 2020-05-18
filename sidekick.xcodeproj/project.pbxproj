@@ -9,13 +9,22 @@
 /* Begin PBXBuildFile section */
 		F32A798124721F8500F0D1AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32A798024721F8500F0D1AF /* AppDelegate.swift */; };
 		F32A798324721F8500F0D1AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32A798224721F8500F0D1AF /* SceneDelegate.swift */; };
-		F32A798524721F8500F0D1AF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32A798424721F8500F0D1AF /* FirstViewController.swift */; };
-		F32A798724721F8500F0D1AF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32A798624721F8500F0D1AF /* SecondViewController.swift */; };
+		F32A798524721F8500F0D1AF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32A798424721F8500F0D1AF /* HomeViewController.swift */; };
+		F32A798724721F8500F0D1AF /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32A798624721F8500F0D1AF /* PlansViewController.swift */; };
 		F32A798A24721F8500F0D1AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32A798824721F8500F0D1AF /* Main.storyboard */; };
 		F32A798C24721F8600F0D1AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F32A798B24721F8600F0D1AF /* Assets.xcassets */; };
 		F32A798F24721F8600F0D1AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32A798D24721F8600F0D1AF /* LaunchScreen.storyboard */; };
 		F32A799A24721F8600F0D1AF /* sidekickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32A799924721F8600F0D1AF /* sidekickTests.swift */; };
 		F32A79A524721F8600F0D1AF /* sidekickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32A79A424721F8600F0D1AF /* sidekickUITests.swift */; };
+		F3FC044C24726A74006BCE6A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC044B24726A74006BCE6A /* ProfileViewController.swift */; };
+		F3FC044E24726FAE006BCE6A /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC044D24726FAE006BCE6A /* AppConstants.swift */; };
+		F3FC045024727056006BCE6A /* RgbaUIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC044F24727056006BCE6A /* RgbaUIColorExtension.swift */; };
+		F3FC045224727D77006BCE6A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FC045124727D77006BCE6A /* Home.storyboard */; };
+		F3FC045424727D86006BCE6A /* Plans.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FC045324727D86006BCE6A /* Plans.storyboard */; };
+		F3FC045624727D91006BCE6A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FC045524727D91006BCE6A /* Profile.storyboard */; };
+		F3FC04592472813E006BCE6A /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FC04582472813E006BCE6A /* SignUp.storyboard */; };
+		F3FC045B24728151006BCE6A /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FC045A24728151006BCE6A /* SignIn.storyboard */; };
+		F3FC045D24728184006BCE6A /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FC045C24728184006BCE6A /* Onboarding.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +48,8 @@
 		F32A797D24721F8500F0D1AF /* sidekick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sidekick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32A798024721F8500F0D1AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F32A798224721F8500F0D1AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F32A798424721F8500F0D1AF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		F32A798624721F8500F0D1AF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F32A798424721F8500F0D1AF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F32A798624721F8500F0D1AF /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
 		F32A798924721F8500F0D1AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F32A798B24721F8600F0D1AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F32A798E24721F8600F0D1AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +60,15 @@
 		F32A79A024721F8600F0D1AF /* sidekickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sidekickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32A79A424721F8600F0D1AF /* sidekickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sidekickUITests.swift; sourceTree = "<group>"; };
 		F32A79A624721F8600F0D1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3FC044B24726A74006BCE6A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F3FC044D24726FAE006BCE6A /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		F3FC044F24727056006BCE6A /* RgbaUIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RgbaUIColorExtension.swift; sourceTree = "<group>"; };
+		F3FC045124727D77006BCE6A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		F3FC045324727D86006BCE6A /* Plans.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Plans.storyboard; sourceTree = "<group>"; };
+		F3FC045524727D91006BCE6A /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		F3FC04582472813E006BCE6A /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		F3FC045A24728151006BCE6A /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		F3FC045C24728184006BCE6A /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +119,14 @@
 		F32A797F24721F8500F0D1AF /* sidekick */ = {
 			isa = PBXGroup;
 			children = (
+				F3FC045724727E65006BCE6A /* Storyboards */,
 				F32A798024721F8500F0D1AF /* AppDelegate.swift */,
+				F3FC044D24726FAE006BCE6A /* AppConstants.swift */,
+				F3FC044F24727056006BCE6A /* RgbaUIColorExtension.swift */,
 				F32A798224721F8500F0D1AF /* SceneDelegate.swift */,
-				F32A798424721F8500F0D1AF /* FirstViewController.swift */,
-				F32A798624721F8500F0D1AF /* SecondViewController.swift */,
-				F32A798824721F8500F0D1AF /* Main.storyboard */,
+				F32A798424721F8500F0D1AF /* HomeViewController.swift */,
+				F3FC044B24726A74006BCE6A /* ProfileViewController.swift */,
+				F32A798624721F8500F0D1AF /* PlansViewController.swift */,
 				F32A798B24721F8600F0D1AF /* Assets.xcassets */,
 				F32A798D24721F8600F0D1AF /* LaunchScreen.storyboard */,
 				F32A799024721F8600F0D1AF /* Info.plist */,
@@ -129,6 +150,20 @@
 				F32A79A624721F8600F0D1AF /* Info.plist */,
 			);
 			path = sidekickUITests;
+			sourceTree = "<group>";
+		};
+		F3FC045724727E65006BCE6A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F32A798824721F8500F0D1AF /* Main.storyboard */,
+				F3FC045124727D77006BCE6A /* Home.storyboard */,
+				F3FC045324727D86006BCE6A /* Plans.storyboard */,
+				F3FC045524727D91006BCE6A /* Profile.storyboard */,
+				F3FC04582472813E006BCE6A /* SignUp.storyboard */,
+				F3FC045A24728151006BCE6A /* SignIn.storyboard */,
+				F3FC045C24728184006BCE6A /* Onboarding.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +270,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3FC045B24728151006BCE6A /* SignIn.storyboard in Resources */,
+				F3FC045624727D91006BCE6A /* Profile.storyboard in Resources */,
 				F32A798F24721F8600F0D1AF /* LaunchScreen.storyboard in Resources */,
 				F32A798C24721F8600F0D1AF /* Assets.xcassets in Resources */,
+				F3FC04592472813E006BCE6A /* SignUp.storyboard in Resources */,
 				F32A798A24721F8500F0D1AF /* Main.storyboard in Resources */,
+				F3FC045D24728184006BCE6A /* Onboarding.storyboard in Resources */,
+				F3FC045424727D86006BCE6A /* Plans.storyboard in Resources */,
+				F3FC045224727D77006BCE6A /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +303,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F32A798724721F8500F0D1AF /* SecondViewController.swift in Sources */,
-				F32A798524721F8500F0D1AF /* FirstViewController.swift in Sources */,
+				F3FC045024727056006BCE6A /* RgbaUIColorExtension.swift in Sources */,
+				F32A798724721F8500F0D1AF /* PlansViewController.swift in Sources */,
+				F3FC044E24726FAE006BCE6A /* AppConstants.swift in Sources */,
+				F32A798524721F8500F0D1AF /* HomeViewController.swift in Sources */,
+				F3FC044C24726A74006BCE6A /* ProfileViewController.swift in Sources */,
 				F32A798124721F8500F0D1AF /* AppDelegate.swift in Sources */,
 				F32A798324721F8500F0D1AF /* SceneDelegate.swift in Sources */,
 			);

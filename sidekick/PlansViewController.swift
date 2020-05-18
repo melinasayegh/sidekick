@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  PlansViewController.swift
 //  sidekick
 //
 //  Created by Melina Sayegh on 5/17/20.
@@ -8,13 +8,14 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class PlansViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        self.tabBarItem.image = UIImage(named: "planInactive")
+        self.tabBarItem.selectedImage = UIImage(named: "planActive")
     }
-
-
 }
 

@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  HomeViewController.swift
 //  sidekick
 //
 //  Created by Melina Sayegh on 5/17/20.
@@ -8,11 +8,16 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.tabBarItem.image = UIImage(named: "homeInactive")
+        self.tabBarItem.selectedImage = UIImage(named: "homeActive")
+        
+        // resize tab bar icon
+        
     }
 
 
