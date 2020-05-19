@@ -11,7 +11,7 @@ import UIKit
 
 extension UIView {
     
-    func setGradientBackground(colorOne: UIColor, colorTwo: UIColor) {
+    func setGradientBackground(colorOne: UIColor, colorTwo: UIColor, isRounded: Bool) {
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = bounds
@@ -19,6 +19,10 @@ extension UIView {
         gradientLayer.locations = [0.0 ,1.0]
         gradientLayer.startPoint = CGPoint(x: 1.0, y: 1.0)
         gradientLayer.endPoint = CGPoint(x: 0.0, y: 0.0)
+        
+        if isRounded {
+            gradientLayer.cornerRadius = 23
+        }
         
         layer.insertSublayer(gradientLayer, at: 0)
         

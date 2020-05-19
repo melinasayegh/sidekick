@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
         // set images for Home tab icon
         self.tabBarItem.image = UIImage(named: "homeInactive")
         self.tabBarItem.selectedImage = UIImage(named: "homeActive")
+        
     }
-    
 
 }

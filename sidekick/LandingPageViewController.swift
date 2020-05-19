@@ -11,13 +11,25 @@ import UIKit
 class LandingPageViewController: UIViewController {
     
     
-    @IBOutlet private var signUpButton: GradientButton!
-    @IBOutlet private var signInButton: OutlinedButton!
+    @IBOutlet private var signUpButton: CustomButton!
+    @IBOutlet private var signInButton: CustomButton!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.setupButtons()
+    }
+    
+    func setupButtons() {
+        // set up buttons, change colors
+        // sign up button
+        self.signUpButton.setGradientBackground(colorOne: Colors.gradientGreen, colorTwo: Colors.gradientGreenBlue, isRounded: true)
+        
+        // sign in button
+        self.signInButton.backgroundColor = Colors.white
+        self.signInButton.layer.borderColor = Colors.white.cgColor
+        self.signInButton.setTitleColor(Colors.navy, for: .normal)
     }
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) {

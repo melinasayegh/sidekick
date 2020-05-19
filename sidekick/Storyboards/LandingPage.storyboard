@@ -36,7 +36,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to sidekick!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqZ-WS-YdV">
-                                <rect key="frame" x="105" y="344" width="204.5" height="30"/>
+                                <rect key="frame" x="102.5" y="344" width="209" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="j5F-9T-hev"/>
                                 </constraints>
@@ -44,20 +44,23 @@
                                 <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v05-ug-Z4u">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v05-ug-Z4u" customClass="CustomButton" customModule="sidekick" customModuleProvider="target">
                                 <rect key="frame" x="57" y="474" width="300" height="45"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.086274509799999996" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="IUY-XX-hsa"/>
                                     <constraint firstAttribute="height" constant="45" id="Isc-P7-lEK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
+                                <color key="tintColor" red="0.98823529409999999" green="0.99607843139999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Sign up"/>
                                 <connections>
                                     <action selector="signUpButtonTapped:" destination="lB3-JQ-b01" eventType="touchUpInside" id="n1D-Oc-Zbv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTk-36-lOb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTk-36-lOb" customClass="CustomButton" customModule="sidekick" customModuleProvider="target">
                                 <rect key="frame" x="57" y="541" width="300" height="45"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="7KI-FU-C6Z"/>
                                     <constraint firstAttribute="height" constant="45" id="CN1-oT-nqP"/>
@@ -71,7 +74,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aep-fg-bEa">
-                                <rect key="frame" x="199.5" y="636" width="15" height="21"/>
+                                <rect key="frame" x="199.5" y="636" width="15" height="19"/>
                                 <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
                                 <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -85,20 +88,41 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xT-Qr-MDN">
-                                <rect key="frame" x="161.5" y="707" width="91.5" height="21"/>
+                                <rect key="frame" x="163.5" y="705" width="87.5" height="19"/>
                                 <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
                                 <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="EGj-Mr-9xA">
+                                <rect key="frame" x="149" y="744" width="116" height="38"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google" translatesAutoresizingMaskIntoConstraints="NO" id="oI9-Zm-Qlm">
+                                        <rect key="frame" x="0.0" y="0.0" width="38" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="oI9-Zm-Qlm" secondAttribute="height" multiplier="1:1" id="3Yy-pM-Mo2"/>
+                                            <constraint firstAttribute="width" constant="38" id="wzC-qu-U0c"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="dtw-KZ-jNQ">
+                                        <rect key="frame" x="78" y="0.0" width="38" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="38" id="8K7-xR-JYx"/>
+                                            <constraint firstAttribute="width" secondItem="dtw-KZ-jNQ" secondAttribute="height" multiplier="1:1" id="Lje-o6-rJN"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.98823529409999999" green="0.99607843139999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="6xT-Qr-MDN" firstAttribute="centerX" secondItem="KRz-7k-ItV" secondAttribute="centerX" id="7k7-82-n8Y"/>
+                            <constraint firstItem="EGj-Mr-9xA" firstAttribute="top" secondItem="6xT-Qr-MDN" secondAttribute="bottom" constant="20" id="Dbl-6n-dB2"/>
                             <constraint firstItem="DTk-36-lOb" firstAttribute="centerX" secondItem="KRz-7k-ItV" secondAttribute="centerX" id="EQf-6f-ZLR"/>
                             <constraint firstItem="MqZ-WS-YdV" firstAttribute="centerX" secondItem="KRz-7k-ItV" secondAttribute="centerX" id="Fte-C7-GCg"/>
                             <constraint firstItem="v05-ug-Z4u" firstAttribute="centerX" secondItem="KRz-7k-ItV" secondAttribute="centerX" id="MYo-kT-XY2"/>
                             <constraint firstItem="v05-ug-Z4u" firstAttribute="top" secondItem="MqZ-WS-YdV" secondAttribute="bottom" constant="100" id="Nfe-Z5-VDp"/>
                             <constraint firstItem="DTk-36-lOb" firstAttribute="top" secondItem="v05-ug-Z4u" secondAttribute="bottom" constant="22" id="S7w-yZ-pOK"/>
+                            <constraint firstItem="EGj-Mr-9xA" firstAttribute="centerX" secondItem="KRz-7k-ItV" secondAttribute="centerX" id="b13-DB-96v"/>
                             <constraint firstItem="Aep-fg-bEa" firstAttribute="centerX" secondItem="KRz-7k-ItV" secondAttribute="centerX" id="dOu-XE-TCY"/>
                             <constraint firstItem="6Dq-i2-Xdn" firstAttribute="centerX" secondItem="KRz-7k-ItV" secondAttribute="centerX" id="hMP-ty-iIw"/>
                             <constraint firstItem="Aep-fg-bEa" firstAttribute="top" secondItem="DTk-36-lOb" secondAttribute="bottom" constant="50" id="oNc-d9-nBc"/>
@@ -130,5 +154,7 @@
     </scenes>
     <resources>
         <image name="Logo" width="3348" height="3153"/>
+        <image name="facebook" width="158" height="157"/>
+        <image name="google" width="157" height="157"/>
     </resources>
 </document>

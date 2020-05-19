@@ -1,5 +1,5 @@
 //
-//  GradientButton.swift
+//  CustomButton.swift
 //  sidekick
 //
 //  Created by Melina Sayegh on 5/18/20.
@@ -8,7 +8,8 @@
 
 import UIKit
 
-class GradientButton: UIButton {
+class CustomButton: UIButton {
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupButton()
@@ -21,13 +22,12 @@ class GradientButton: UIButton {
     
     func setupButton() {
         setShadow()
-        setTitleColor(.white, for: .normal)
+        setTitleColor(Colors.white, for: .normal)
         
+        // default to navy background
         backgroundColor      = Colors.navy
-        titleLabel?.font     = UIFont(name: "Muli-Regular", size: 16)
-        layer.cornerRadius   = 25
-        layer.borderWidth    = 3.0
-        layer.borderColor    = Colors.navy.cgColor
+        titleLabel?.font     = UIFont(name: "Muli-Bold", size: 16)
+        layer.cornerRadius   = 23
     }
     
     private func setShadow() {

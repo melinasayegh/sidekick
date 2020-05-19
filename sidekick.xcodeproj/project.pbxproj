@@ -45,8 +45,7 @@
 		F3D1237924733833008389D4 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1237824733833008389D4 /* LandingPageViewController.swift */; };
 		F3D1237B2473384E008389D4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1237A2473384E008389D4 /* SignInViewController.swift */; };
 		F3D1237D247338EF008389D4 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1237C247338EF008389D4 /* OnboardingPageViewController.swift */; };
-		F3D1237F24734030008389D4 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1237E24734030008389D4 /* GradientButton.swift */; };
-		F3D123822473404B008389D4 /* OutlinedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D123812473404B008389D4 /* OutlinedButton.swift */; };
+		F3D1237F24734030008389D4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D1237E24734030008389D4 /* CustomButton.swift */; };
 		F3FC044C24726A74006BCE6A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC044B24726A74006BCE6A /* ProfileViewController.swift */; };
 		F3FC044E24726FAE006BCE6A /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC044D24726FAE006BCE6A /* AppConstants.swift */; };
 		F3FC045024727056006BCE6A /* RgbaUIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC044F24727056006BCE6A /* RgbaUIColorExtension.swift */; };
@@ -122,8 +121,7 @@
 		F3D1237824733833008389D4 /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		F3D1237A2473384E008389D4 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F3D1237C247338EF008389D4 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
-		F3D1237E24734030008389D4 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
-		F3D123812473404B008389D4 /* OutlinedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedButton.swift; sourceTree = "<group>"; };
+		F3D1237E24734030008389D4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		F3FC044B24726A74006BCE6A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F3FC044D24726FAE006BCE6A /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		F3FC044F24727056006BCE6A /* RgbaUIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RgbaUIColorExtension.swift; sourceTree = "<group>"; };
@@ -195,7 +193,7 @@
 				F3FC044B24726A74006BCE6A /* ProfileViewController.swift */,
 				F32A798624721F8500F0D1AF /* PlansViewController.swift */,
 				F32A798224721F8500F0D1AF /* SceneDelegate.swift */,
-				F3D1238024734037008389D4 /* Custom Buttons */,
+				F3D1237E24734030008389D4 /* CustomButton.swift */,
 				F3FC044F24727056006BCE6A /* RgbaUIColorExtension.swift */,
 				F3D12372247331C1008389D4 /* UIView+Extension.swift */,
 				F32A798B24721F8600F0D1AF /* Assets.xcassets */,
@@ -277,15 +275,6 @@
 				F3D123692473227B008389D4 /* BalooBhai2-SemiBold.ttf */,
 			);
 			path = BalooBhai2;
-			sourceTree = "<group>";
-		};
-		F3D1238024734037008389D4 /* Custom Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				F3D1237E24734030008389D4 /* GradientButton.swift */,
-				F3D123812473404B008389D4 /* OutlinedButton.swift */,
-			);
-			path = "Custom Buttons";
 			sourceTree = "<group>";
 		};
 		F3FC045724727E65006BCE6A /* Storyboards */ = {
@@ -469,13 +458,12 @@
 				F32A798724721F8500F0D1AF /* PlansViewController.swift in Sources */,
 				F3D12373247331C1008389D4 /* UIView+Extension.swift in Sources */,
 				F3FC044E24726FAE006BCE6A /* AppConstants.swift in Sources */,
-				F3D123822473404B008389D4 /* OutlinedButton.swift in Sources */,
 				F32A798524721F8500F0D1AF /* HomeViewController.swift in Sources */,
 				F3FC044C24726A74006BCE6A /* ProfileViewController.swift in Sources */,
 				F3D1237D247338EF008389D4 /* OnboardingPageViewController.swift in Sources */,
 				F3D1237924733833008389D4 /* LandingPageViewController.swift in Sources */,
 				F3D12375247335C5008389D4 /* SignUpViewController.swift in Sources */,
-				F3D1237F24734030008389D4 /* GradientButton.swift in Sources */,
+				F3D1237F24734030008389D4 /* CustomButton.swift in Sources */,
 				F32A798124721F8500F0D1AF /* AppDelegate.swift in Sources */,
 				F32A798324721F8500F0D1AF /* SceneDelegate.swift in Sources */,
 			);
