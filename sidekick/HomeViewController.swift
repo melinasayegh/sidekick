@@ -10,6 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -17,7 +18,7 @@ class HomeViewController: UIViewController {
         // set images for Home tab icon
         self.tabBarItem.image = UIImage(named: "homeInactive")
         self.tabBarItem.selectedImage = UIImage(named: "homeActive")
-
     }
-}
+    
 
+}

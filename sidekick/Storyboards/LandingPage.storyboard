@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lB3-JQ-b01">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BalooBhai2-SemiBold.ttf">
+            <string>BalooBhai2-SemiBold</string>
+        </array>
+        <array key="Muli-Bold.ttf">
+            <string>Muli-Bold</string>
+        </array>
+        <array key="Muli-Regular.ttf">
+            <string>Muli-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--LandingPageVC-->
+        <scene sceneID="zog-lu-iLz">
+            <objects>
+                <viewController storyboardIdentifier="LandingPage" title="LandingPageVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lB3-JQ-b01" customClass="LandingPageViewController" customModule="sidekick" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KRz-7k-ItV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="6Dq-i2-Xdn">
+                                <rect key="frame" x="87" y="94" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="6bd-q3-ZrU"/>
+                                    <constraint firstAttribute="width" constant="240" id="JsE-zE-sje"/>
+                                    <constraint firstAttribute="height" constant="240" id="cSy-RY-FNK"/>
+                                    <constraint firstAttribute="width" secondItem="6Dq-i2-Xdn" secondAttribute="height" multiplier="1:1" id="qvd-2b-80i"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to sidekick!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqZ-WS-YdV">
+                                <rect key="frame" x="105" y="344" width="204.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="j5F-9T-hev"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BalooBhai2-SemiBold" family="Baloo Bhai 2" pointSize="22"/>
+                                <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v05-ug-Z4u">
+                                <rect key="frame" x="57" y="474" width="300" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="IUY-XX-hsa"/>
+                                    <constraint firstAttribute="height" constant="45" id="Isc-P7-lEK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
+                                <state key="normal" title="Sign up"/>
+                                <connections>
+                                    <action selector="signUpButtonTapped:" destination="lB3-JQ-b01" eventType="touchUpInside" id="n1D-Oc-Zbv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTk-36-lOb">
+                                <rect key="frame" x="57" y="541" width="300" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="7KI-FU-C6Z"/>
+                                    <constraint firstAttribute="height" constant="45" id="CN1-oT-nqP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" red="0.08235294118" green="0.086274509799999996" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInButtonTapped:" destination="lB3-JQ-b01" eventType="touchUpInside" id="P7H-o1-QSw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aep-fg-bEa">
+                                <rect key="frame" x="199.5" y="636" width="15" height="21"/>
+                                <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
+                                <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2A-uf-dhd">
+                                <rect key="frame" x="20" y="44" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back to home"/>
+                                <connections>
+                                    <segue destination="t5m-wB-0kT" kind="show" id="F74-2c-KTG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xT-Qr-MDN">
+                                <rect key="frame" x="161.5" y="707" width="91.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
+                                <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.99607843139999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6xT-Qr-MDN" firstAttribute="centerX" secondItem="KRz-7k-ItV" secondAttribute="centerX" id="7k7-82-n8Y"/>
+                            <constraint firstItem="DTk-36-lOb" firstAttribute="centerX" secondItem="KRz-7k-ItV" secondAttribute="centerX" id="EQf-6f-ZLR"/>
+                            <constraint firstItem="MqZ-WS-YdV" firstAttribute="centerX" secondItem="KRz-7k-ItV" secondAttribute="centerX" id="Fte-C7-GCg"/>
+                            <constraint firstItem="v05-ug-Z4u" firstAttribute="centerX" secondItem="KRz-7k-ItV" secondAttribute="centerX" id="MYo-kT-XY2"/>
+                            <constraint firstItem="v05-ug-Z4u" firstAttribute="top" secondItem="MqZ-WS-YdV" secondAttribute="bottom" constant="100" id="Nfe-Z5-VDp"/>
+                            <constraint firstItem="DTk-36-lOb" firstAttribute="top" secondItem="v05-ug-Z4u" secondAttribute="bottom" constant="22" id="S7w-yZ-pOK"/>
+                            <constraint firstItem="Aep-fg-bEa" firstAttribute="centerX" secondItem="KRz-7k-ItV" secondAttribute="centerX" id="dOu-XE-TCY"/>
+                            <constraint firstItem="6Dq-i2-Xdn" firstAttribute="centerX" secondItem="KRz-7k-ItV" secondAttribute="centerX" id="hMP-ty-iIw"/>
+                            <constraint firstItem="Aep-fg-bEa" firstAttribute="top" secondItem="DTk-36-lOb" secondAttribute="bottom" constant="50" id="oNc-d9-nBc"/>
+                            <constraint firstItem="6xT-Qr-MDN" firstAttribute="top" secondItem="Aep-fg-bEa" secondAttribute="bottom" constant="50" id="tZj-WM-koH"/>
+                            <constraint firstItem="6Dq-i2-Xdn" firstAttribute="top" secondItem="kSl-bm-9Or" secondAttribute="top" constant="50" id="ucj-u6-YZO"/>
+                            <constraint firstItem="MqZ-WS-YdV" firstAttribute="top" secondItem="6Dq-i2-Xdn" secondAttribute="bottom" constant="10" id="yYt-Bb-qb8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kSl-bm-9Or"/>
+                    </view>
+                    <connections>
+                        <outlet property="signInButton" destination="DTk-36-lOb" id="7ae-75-cew"/>
+                        <outlet property="signUpButton" destination="v05-ug-Z4u" id="rUB-Su-oof"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Nc-RM-lfb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5320.289855072464" y="282.58928571428572"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="xLY-g7-aWh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="t5m-wB-0kT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="AaN-xW-Ipt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yFL-sc-nDE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4527" y="59"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="3348" height="3153"/>
+    </resources>
+</document>

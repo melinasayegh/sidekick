@@ -13,9 +13,6 @@
         <array key="BalooBhai2-Medium.ttf">
             <string>BalooBhai2-Medium</string>
         </array>
-        <array key="Muli-Regular.ttf">
-            <string>Muli-Regular</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Home View Controller-->
@@ -26,13 +23,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Home page" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yay-TR-u18">
-                                <rect key="frame" x="153" y="430.5" width="108.5" height="35.5"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <fontDescription key="fontDescription" name="BalooBhai2-Medium" family="Baloo Bhai 2" pointSize="22"/>
-                                <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sidekick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1n-1x-6GW">
                                 <rect key="frame" x="176" y="89" width="60" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -40,18 +30,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="this is Muli" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCf-qD-Q5I">
-                                <rect key="frame" x="92" y="146" width="78" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByC-iy-jqc">
+                                <rect key="frame" x="142" y="165" width="128" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
-                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="this is system" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Vf-5g-1yV">
-                                <rect key="frame" x="92" y="171" width="104" height="21"/>
+                                <state key="normal" title="go to landing page"/>
+                                <connections>
+                                    <segue destination="wPf-aV-bHB" kind="show" id="Toa-rC-Aw6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B94-OV-47G">
+                                <rect key="frame" x="147" y="248" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="go to onboarding"/>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Home page" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yay-TR-u18">
+                                <rect key="frame" x="152" y="431" width="108.5" height="35.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" name="BalooBhai2-Medium" family="Baloo Bhai 2" pointSize="22"/>
+                                <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -68,6 +64,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEf-fp-vMQ" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1520" y="1266"/>
+        </scene>
+        <!--LandingPage-->
+        <scene sceneID="bhk-9j-Vo5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LandingPage" id="wPf-aV-bHB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fDA-Hh-9LU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YuE-SG-F2u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-675" y="1266"/>
         </scene>
     </scenes>
     <resources>
