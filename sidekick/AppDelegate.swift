@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Tab Bar Colors
-        UITabBar.appearance().barTintColor = Constants.Design.Color.Primary.white
-        UITabBar.appearance().unselectedItemTintColor = Constants.Design.Color.Primary.navy
-        UITabBar.appearance().tintColor = Constants.Design.Color.Primary.navy
+        UITabBar.appearance().barTintColor = Colors.white
+        UITabBar.appearance().unselectedItemTintColor = Colors.navy
+        UITabBar.appearance().tintColor = Colors.navy
         
         return true
     }
