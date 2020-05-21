@@ -1,14 +1,14 @@
 //
-//  SignInViewController.swift
+//  PasswordViewController.swift
 //  sidekick
 //
-//  Created by Melina Sayegh on 5/18/20.
+//  Created by Melina Sayegh on 5/21/20.
 //  Copyright © 2020 Melina Sayegh. All rights reserved.
 //
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class PasswordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,5 +17,4 @@ class SignInViewController: UIViewController {
         //view.setGradientBackground(colorOne: Colors.gradientGreen, colorTwo: Colors.gradientBlue)
 
     }
-    
 }

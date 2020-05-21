@@ -20,5 +20,8 @@ class HomeViewController: UIViewController {
         self.tabBarItem.selectedImage = UIImage(named: "homeActive")
         
     }
+    
+    @IBAction func goToLandingPage(_ segue: UIStoryboardSegue) {
+    }
 
 }

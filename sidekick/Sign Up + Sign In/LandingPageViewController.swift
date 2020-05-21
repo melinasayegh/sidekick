@@ -18,23 +18,11 @@ class LandingPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.setupButtons()
-    }
-    
-    func setupButtons() {
-        // set up buttons, change colors
-        // sign up button
+        // edit sign up button to be blue gradient
         self.signUpButton.setGradientBackgroundFourColors(colorOne: Colors.gradientBlue, colorTwo: Colors.gradientBlueGreen,
-                                                          colorThree: Colors.gradientGreenBlue, colorFour: Colors.gradientGreen,
-                                                          isRounded: true)
-        
-        // sign in button
-        self.signInButton.backgroundColor = Colors.white
-        self.signInButton.layer.borderColor = Colors.white.cgColor
-        self.signInButton.setTitleColor(Colors.navy, for: .normal)
+        colorThree: Colors.gradientGreenBlue, colorFour: Colors.gradientGreen,
+        isRounded: true)
     }
-    
-    
     
 }
 

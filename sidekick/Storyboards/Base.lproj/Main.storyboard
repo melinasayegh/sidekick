@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--HomeVC-->
         <scene sceneID="fnI-lj-FAC">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="02w-aA-mZV" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="HomeVC" id="02w-aA-mZV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="7EJ-tn-tD9"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E4W-Lj-edg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1479" y="956"/>
         </scene>
-        <!--Profile-->
+        <!--ProfileVC-->
         <scene sceneID="qwz-d6-xa9">
             <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="LPQ-no-khO" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="ProfileVC" storyboardName="Profile" referencedIdentifier="ProfileVC" id="LPQ-no-khO" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Qr7-yD-fJg"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ugr-Ik-HWe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="44" y="956"/>
         </scene>
-        <!--Plans-->
+        <!--PlansVC-->
         <scene sceneID="c4U-qv-AWn">
             <objects>
-                <viewControllerPlaceholder storyboardName="Plans" id="h75-Lc-2Vy" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Plans" referencedIdentifier="PlansVC" id="h75-Lc-2Vy" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="OAa-B4-r5x"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i23-A0-5K1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

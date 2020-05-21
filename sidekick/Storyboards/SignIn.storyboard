@@ -1,26 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HH0-FG-GVu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HH0-FG-GVu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="BalooBhai2-SemiBold.ttf">
+            <string>BalooBhai2-SemiBold</string>
+        </array>
+        <array key="Muli-Bold.ttf">
+            <string>Muli-Bold</string>
+        </array>
+        <array key="Muli-Regular.ttf">
+            <string>Muli-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Sign In View Controller-->
+        <!--SignInVC-->
         <scene sceneID="mM2-M8-tzv">
             <objects>
-                <viewController storyboardIdentifier="SignIn" id="HH0-FG-GVu" customClass="SignInViewController" customModule="sidekick" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="z6A-wX-XzS">
+                <viewController storyboardIdentifier="SignInVC" title="SignInVC" id="HH0-FG-GVu" customClass="SignInViewController" customModule="sidekick" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z6A-wX-XzS" customClass="GradientView" customModule="sidekick" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOL-Ig-j3S" customClass="CustomButton" customModule="sidekick" customModuleProvider="target">
+                                <rect key="frame" x="57" y="425.5" width="300" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="69N-Yd-fJg"/>
+                                    <constraint firstAttribute="height" constant="45" id="7Fm-2D-y43"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" name="navy"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasGradient" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isGreenGradient" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOutlined" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasCornerRadius" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasShadow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" name="white"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="0T6-Rc-NFB" customClass="UnderlinedTextField" customModule="sidekick" customModuleProvider="target">
+                                <rect key="frame" x="57" y="260.5" width="300" height="40"/>
+                                <color key="tintColor" name="white"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="06D-Pu-yud"/>
+                                    <constraint firstAttribute="height" constant="40" id="n6k-Rx-DQi"/>
+                                </constraints>
+                                <color key="textColor" red="0.98823529409999999" green="0.99607843139999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isUnderlined" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderTextColor">
+                                        <color key="value" name="white"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Ryi-7y-GI1" customClass="UnderlinedTextField" customModule="sidekick" customModuleProvider="target">
+                                <rect key="frame" x="57" y="340.5" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Cth-0E-K8P"/>
+                                    <constraint firstAttribute="height" constant="40" id="mBg-9z-XSE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isUnderlined" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderTextColor">
+                                        <color key="value" name="white"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sidekick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Gu-Uh-Sjm">
+                                <rect key="frame" x="167" y="104" width="80" height="35.5"/>
+                                <fontDescription key="fontDescription" name="BalooBhai2-SemiBold" family="Baloo Bhai 2" pointSize="22"/>
+                                <color key="textColor" name="white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWR-gN-G5m">
+                                <rect key="frame" x="50" y="697" width="133" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="G9F-Yf-ywx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
+                                <state key="normal" title="Forgot password?">
+                                    <color key="titleColor" name="white"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfr-q5-Vha">
+                                <rect key="frame" x="50" y="657" width="234" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="P8N-iR-dE6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
+                                <state key="normal" title="Don't have an account? Sign up">
+                                    <color key="titleColor" name="white"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="EOL-Ig-j3S" firstAttribute="centerY" secondItem="z6A-wX-XzS" secondAttribute="centerY" id="5Zd-ug-6sD"/>
+                            <constraint firstItem="7Gu-Uh-Sjm" firstAttribute="centerX" secondItem="z6A-wX-XzS" secondAttribute="centerX" id="8Mo-u1-ibh"/>
+                            <constraint firstItem="EOL-Ig-j3S" firstAttribute="top" secondItem="Ryi-7y-GI1" secondAttribute="bottom" constant="45" id="9fb-Gt-eKl"/>
+                            <constraint firstItem="aWR-gN-G5m" firstAttribute="leading" secondItem="fBz-gc-Bk7" secondAttribute="leading" constant="50" id="A5i-oN-utW"/>
+                            <constraint firstItem="EOL-Ig-j3S" firstAttribute="centerX" secondItem="z6A-wX-XzS" secondAttribute="centerX" id="Ifk-Xo-2XQ"/>
+                            <constraint firstItem="aWR-gN-G5m" firstAttribute="top" secondItem="kfr-q5-Vha" secondAttribute="bottom" id="RtX-Qj-TKu"/>
+                            <constraint firstItem="0T6-Rc-NFB" firstAttribute="centerX" secondItem="z6A-wX-XzS" secondAttribute="centerX" id="XfR-e4-BlA"/>
+                            <constraint firstItem="7Gu-Uh-Sjm" firstAttribute="top" secondItem="fBz-gc-Bk7" secondAttribute="top" constant="60" id="aHI-pe-jgv"/>
+                            <constraint firstItem="Ryi-7y-GI1" firstAttribute="centerX" secondItem="z6A-wX-XzS" secondAttribute="centerX" id="c2t-FH-BMo"/>
+                            <constraint firstItem="EOL-Ig-j3S" firstAttribute="centerX" secondItem="z6A-wX-XzS" secondAttribute="centerX" id="kH5-LR-7G6"/>
+                            <constraint firstItem="fBz-gc-Bk7" firstAttribute="bottom" secondItem="aWR-gN-G5m" secondAttribute="bottom" constant="125" id="oIo-n1-qQA"/>
+                            <constraint firstItem="Ryi-7y-GI1" firstAttribute="top" secondItem="0T6-Rc-NFB" secondAttribute="bottom" constant="40" id="rNT-MT-SpP"/>
+                            <constraint firstItem="kfr-q5-Vha" firstAttribute="leading" secondItem="fBz-gc-Bk7" secondAttribute="leading" constant="50" id="toG-gB-wrc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fBz-gc-Bk7"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                <color key="value" red="0.30588235289999999" green="0.53333333329999999" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                <color key="value" name="blueGreen"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="amX-8N-Ild" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="blueGreen">
+            <color red="0.36862745098039218" green="0.66274509803921566" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="navy">
+            <color red="0.082352941176470587" green="0.086274509803921567" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="0.9882352941176471" green="0.99607843137254903" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

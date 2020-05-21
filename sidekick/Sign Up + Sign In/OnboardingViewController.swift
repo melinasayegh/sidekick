@@ -1,5 +1,5 @@
 //
-//  OnboardingPageViewController.swift
+//  OnboardingViewController.swift
 //  sidekick
 //
 //  Created by Melina Sayegh on 5/18/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OnboardingPageViewController: UIPageViewController {
+class OnboardingViewController: UIPageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
