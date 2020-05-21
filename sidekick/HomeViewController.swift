@@ -21,7 +21,7 @@ class HomeViewController: UIViewController {
         
     }
     
-    @IBAction func goToLandingPage(_ segue: UIStoryboardSegue) {
+    @IBAction func goHome(_ segue: UIStoryboardSegue) {
     }
 
 }

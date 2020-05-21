@@ -110,6 +110,9 @@
                                     <constraint firstAttribute="height" constant="20" id="wCc-eN-m41"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="close"/>
+                                <connections>
+                                    <segue destination="G3b-qO-YcK" kind="unwind" unwindAction="goHome:" id="tNd-Cn-At1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -139,6 +142,7 @@
                     <navigationItem key="navigationItem" id="nLI-xf-w8Q"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BA6-KK-4G0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="G3b-qO-YcK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1965.217391304348" y="126.5625"/>
         </scene>
@@ -171,7 +175,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="pink"/>
                         <constraints>
                             <constraint firstItem="5fL-sV-NUH" firstAttribute="centerX" secondItem="xbU-s9-esl" secondAttribute="centerX" id="Q2A-H7-I9O"/>
                             <constraint firstItem="5fL-sV-NUH" firstAttribute="top" secondItem="z1Y-sL-5YM" secondAttribute="bottom" constant="40" id="Rb6-n8-dbT"/>
@@ -199,18 +203,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dgz-N6-EKL">
-                                <rect key="frame" x="0.0" y="198" width="414" height="500"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="500" id="zfW-cs-P7c"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" name="white"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" name="pink"/>
+                        <color key="backgroundColor" name="white"/>
                         <constraints>
-                            <constraint firstItem="Dgz-N6-EKL" firstAttribute="trailing" secondItem="y8m-gV-BDM" secondAttribute="trailing" id="VRY-uK-ci8"/>
-                            <constraint firstItem="Dgz-N6-EKL" firstAttribute="leading" secondItem="y8m-gV-BDM" secondAttribute="leading" id="f1H-oK-gcd"/>
-                            <constraint firstItem="Dgz-N6-EKL" firstAttribute="centerY" secondItem="03w-pV-Ulx" secondAttribute="centerY" id="f6l-Ru-lUn"/>
+                            <constraint firstItem="Dgz-N6-EKL" firstAttribute="top" secondItem="03w-pV-Ulx" secondAttribute="top" id="5je-ub-nr6"/>
+                            <constraint firstAttribute="bottom" secondItem="Dgz-N6-EKL" secondAttribute="bottom" id="8mT-lz-cRe"/>
+                            <constraint firstItem="Dgz-N6-EKL" firstAttribute="leading" secondItem="y8m-gV-BDM" secondAttribute="leading" id="VUF-PC-6P0"/>
+                            <constraint firstItem="Dgz-N6-EKL" firstAttribute="trailing" secondItem="y8m-gV-BDM" secondAttribute="trailing" id="sic-XL-dpI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="y8m-gV-BDM"/>
                     </view>

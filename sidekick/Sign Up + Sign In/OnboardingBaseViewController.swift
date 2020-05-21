@@ -14,6 +14,11 @@ class OnboardingBaseViewController: UIViewController {
     @IBOutlet var contentView: UIView!
     
     let dataSource = ["Question One", "Question Two", "Question Three", "Question Four", "Question Five"]
+    let questionDataArray = ["How do you get around?",
+                             "Are you adventurous?",
+                             "Which of the following describes you?",
+                             "How do you feel about crowds?",
+                             "What type of events do you like to attend?"]
     var currentQuestionPageIndex = 0
     
     override func viewDidLoad() {

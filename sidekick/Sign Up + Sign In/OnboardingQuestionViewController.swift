@@ -10,7 +10,7 @@ import UIKit
 
 class OnboardingQuestionViewController: UIViewController {
     
-    var index = 0
+    var index: Int?
     
     @IBOutlet var questionLabel: UILabel!
     var questionText: String?
