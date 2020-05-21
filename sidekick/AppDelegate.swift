@@ -21,6 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().unselectedItemTintColor = Colors.navy
         UITabBar.appearance().tintColor = Colors.navy
         
+        
+        // Page Control Colors
+        let pageControl = UIPageControl.appearance()
+        pageControl.currentPageIndicatorTintColor = Colors.grey
+        pageControl.pageIndicatorTintColor = Colors.lightGrey
+        
+        
         return true
     }
 

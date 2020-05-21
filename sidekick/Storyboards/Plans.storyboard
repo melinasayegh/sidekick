@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVR-f0-TaN">
-                                <rect key="frame" x="72.5" y="470" width="269.5" height="21"/>
+                                <rect key="frame" x="71" y="475.5" width="272.5" height="23"/>
                                 <fontDescription key="fontDescription" name="Muli-Light" family="Muli" pointSize="18"/>
                                 <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -36,6 +36,14 @@
                                 <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8F-Ah-nZr">
+                                <rect key="frame" x="148" y="164" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="go to onboarding"/>
+                                <connections>
+                                    <segue destination="DKC-Ck-4vM" kind="show" id="gTH-Ms-NNJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -52,6 +60,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yEs-71-b4X" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-720" y="1266"/>
+        </scene>
+        <!--OnboardingPhasesVC-->
+        <scene sceneID="O1j-Va-gaP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Onboarding" referencedIdentifier="OnboardingPhasesVC" id="DKC-Ck-4vM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UUD-aw-xpJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dko-6l-Xwq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-164" y="1133"/>
         </scene>
     </scenes>
     <resources>

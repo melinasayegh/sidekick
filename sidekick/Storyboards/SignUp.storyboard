@@ -20,7 +20,7 @@
         <array key="Muli-Medium.ttf">
             <string>Muli-Medium</string>
         </array>
-        <array key="Muli-Regular.ttf">
+        <array key="Muli-VariableFont_wght.ttf">
             <string>Muli-Regular</string>
         </array>
     </customFonts>
@@ -40,15 +40,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xm-1m-6H7">
-                                <rect key="frame" x="50" y="382" width="196" height="26"/>
+                                <rect key="frame" x="57" y="382" width="196" height="26"/>
                                 <fontDescription key="fontDescription" name="BalooBhai2-Regular" family="Baloo Bhai 2" pointSize="22"/>
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uw4-nM-39l" customClass="UnderlinedTextField" customModule="sidekick" customModuleProvider="target">
-                                <rect key="frame" x="50" y="428" width="314" height="40"/>
+                                <rect key="frame" x="57" y="428" width="300" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="3rL-0W-EP7"/>
+                                    <constraint firstAttribute="width" constant="300" id="Epr-27-xrd"/>
                                 </constraints>
                                 <color key="textColor" name="white"/>
                                 <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
@@ -58,7 +59,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzw-qZ-08q">
-                                <rect key="frame" x="50" y="662" width="239" height="31"/>
+                                <rect key="frame" x="57" y="666" width="239" height="31"/>
                                 <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
                                 <state key="normal" title="Already have an account? Sign in">
                                     <color key="titleColor" name="white"/>
@@ -67,15 +68,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.72149829503639074" green="0.77102421636453367" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="VYC-8u-Gdr" firstAttribute="bottom" secondItem="xzw-qZ-08q" secondAttribute="bottom" constant="169" id="5Ax-QF-OOj"/>
-                            <constraint firstItem="uw4-nM-39l" firstAttribute="centerY" secondItem="IbA-Zn-aDI" secondAttribute="centerY" id="AGl-wP-QrR"/>
-                            <constraint firstItem="9GQ-Jk-9m3" firstAttribute="top" secondItem="VYC-8u-Gdr" secondAttribute="top" constant="60" id="CpB-A1-HN8"/>
-                            <constraint firstItem="VYC-8u-Gdr" firstAttribute="trailing" secondItem="uw4-nM-39l" secondAttribute="trailing" constant="50" id="FRy-nf-UYa"/>
-                            <constraint firstItem="uw4-nM-39l" firstAttribute="leading" secondItem="VYC-8u-Gdr" secondAttribute="leading" constant="50" id="My5-WI-Pta"/>
-                            <constraint firstItem="9GQ-Jk-9m3" firstAttribute="centerX" secondItem="IbA-Zn-aDI" secondAttribute="centerX" id="gb6-VW-Wdv"/>
-                            <constraint firstItem="4xm-1m-6H7" firstAttribute="leading" secondItem="VYC-8u-Gdr" secondAttribute="leading" constant="50" id="hDj-ex-EeG"/>
-                            <constraint firstItem="uw4-nM-39l" firstAttribute="top" secondItem="4xm-1m-6H7" secondAttribute="bottom" constant="20" id="rPX-U2-u2M"/>
-                            <constraint firstItem="xzw-qZ-08q" firstAttribute="leading" secondItem="VYC-8u-Gdr" secondAttribute="leading" constant="50" id="t7a-pf-Gxk"/>
+                            <constraint firstItem="VYC-8u-Gdr" firstAttribute="bottom" secondItem="xzw-qZ-08q" secondAttribute="bottom" constant="165" id="g3b-dj-Kme"/>
+                            <constraint firstItem="uw4-nM-39l" firstAttribute="leading" secondItem="4xm-1m-6H7" secondAttribute="leading" id="hR7-Bd-Y4B"/>
+                            <constraint firstItem="uw4-nM-39l" firstAttribute="top" secondItem="4xm-1m-6H7" secondAttribute="bottom" constant="20" id="jQM-KT-b0m"/>
+                            <constraint firstItem="9GQ-Jk-9m3" firstAttribute="centerX" secondItem="IbA-Zn-aDI" secondAttribute="centerX" id="jm9-XD-L5S"/>
+                            <constraint firstItem="xzw-qZ-08q" firstAttribute="leading" secondItem="4xm-1m-6H7" secondAttribute="leading" id="kPL-v1-aUo"/>
+                            <constraint firstItem="9GQ-Jk-9m3" firstAttribute="top" secondItem="VYC-8u-Gdr" secondAttribute="top" constant="60" id="qDO-Hd-6kJ"/>
+                            <constraint firstItem="uw4-nM-39l" firstAttribute="centerY" secondItem="IbA-Zn-aDI" secondAttribute="centerY" id="wu6-nL-qdd"/>
+                            <constraint firstItem="uw4-nM-39l" firstAttribute="centerX" secondItem="IbA-Zn-aDI" secondAttribute="centerX" id="xM0-0f-juB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VYC-8u-Gdr"/>
                         <userDefinedRuntimeAttributes>
@@ -99,11 +99,11 @@
             <objects>
                 <viewController storyboardIdentifier="EnableSignUpVC" id="imP-Cp-QMn" customClass="EnableSignUpViewController" customModule="sidekick" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bRy-oA-uz3" customClass="GradientView" customModule="sidekick" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQa-Kr-tne" customClass="CustomButton" customModule="sidekick" customModuleProvider="target">
-                                <rect key="frame" x="57" y="672" width="300" height="45"/>
+                                <rect key="frame" x="57" y="618" width="300" height="45"/>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.99607843139999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="JGW-Ya-Zkj"/>
@@ -129,7 +129,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6u-V4-Mso">
-                                <rect key="frame" x="190" y="767" width="34" height="33"/>
+                                <rect key="frame" x="190" y="713" width="34" height="33"/>
                                 <fontDescription key="fontDescription" name="Muli-Medium" family="Muli" pointSize="18"/>
                                 <state key="normal" title="skip">
                                     <color key="titleColor" red="0.98823529409999999" green="0.99607843139999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -139,26 +139,26 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sidekick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrC-LJ-k3Y">
-                                <rect key="frame" x="167" y="104" width="80" height="26"/>
+                                <rect key="frame" x="167" y="60" width="80" height="26"/>
                                 <fontDescription key="fontDescription" name="BalooBhai2-SemiBold" family="Baloo Bhai 2" pointSize="22"/>
                                 <color key="textColor" red="0.98823529409999999" green="0.99607843139999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable location services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cie-DU-abV">
-                                <rect key="frame" x="88" y="195" width="238" height="26"/>
+                                <rect key="frame" x="88" y="151" width="238" height="26"/>
                                 <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="22"/>
                                 <color key="textColor" red="0.98823529409999999" green="0.99607843139999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locationServices" translatesAutoresizingMaskIntoConstraints="NO" id="t3m-jA-T1Z">
-                                <rect key="frame" x="52" y="231" width="310" height="302"/>
+                                <rect key="frame" x="52" y="187" width="310" height="302"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="302" id="A2s-0C-zNB"/>
                                     <constraint firstAttribute="width" constant="310" id="kKp-d8-AvE"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="So we can find events near you" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbT-VH-Yau">
-                                <rect key="frame" x="57" y="501" width="300" height="50"/>
+                                <rect key="frame" x="57" y="457" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="SFK-aH-zrO"/>
                                     <constraint firstAttribute="height" constant="50" id="YjI-aw-gte"/>
@@ -205,7 +205,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lqx-Fr-UbJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="e5W-Bx-Hfq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="83" y="925"/>
+            <point key="canvasLocation" x="1712" y="128"/>
         </scene>
         <!--NotificationServicesVC-->
         <scene sceneID="zri-nk-0JI">
@@ -317,7 +317,7 @@ upcoming events and plans</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iZx-Ca-Ipc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="925"/>
+            <point key="canvasLocation" x="2499" y="128"/>
         </scene>
         <!--GetStartedVC-->
         <scene sceneID="W1M-m3-hnB">
@@ -440,17 +440,17 @@ upcoming events and plans</string>
                     </connections>
                 </button>
             </objects>
-            <point key="canvasLocation" x="1639" y="925"/>
+            <point key="canvasLocation" x="3267" y="128"/>
         </scene>
-        <!--OnboardingVC-->
+        <!--OnboardingPhasesVC-->
         <scene sceneID="wbD-Cq-bBS">
             <objects>
-                <viewControllerPlaceholder storyboardName="Onboarding" referencedIdentifier="OnboardingVC" id="W3h-j5-5fV" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Onboarding" referencedIdentifier="OnboardingPhasesVC" id="W3h-j5-5fV" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="GUG-LZ-n5P"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nAA-Ow-LvM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2335" y="909"/>
+            <point key="canvasLocation" x="3964" y="112"/>
         </scene>
         <!--HomeVC-->
         <scene sceneID="uXO-YT-hFE">
@@ -460,7 +460,7 @@ upcoming events and plans</string>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P2p-pB-Ygr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2309" y="943"/>
+            <point key="canvasLocation" x="3938" y="146"/>
         </scene>
         <!--PasswordVC-->
         <scene sceneID="aJR-W9-8Aw">
@@ -476,15 +476,16 @@ upcoming events and plans</string>
                                 <color key="textColor" red="0.98823529409999999" green="0.99607843139999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfC-pR-fdV">
-                                <rect key="frame" x="50" y="382" width="196" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfC-pR-fdV">
+                                <rect key="frame" x="57" y="256" width="185.5" height="26"/>
                                 <fontDescription key="fontDescription" name="BalooBhai2-Regular" family="Baloo Bhai 2" pointSize="22"/>
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yAm-R3-e79" customClass="UnderlinedTextField" customModule="sidekick" customModuleProvider="target">
-                                <rect key="frame" x="50" y="428" width="314" height="40"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" placeholder="full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yAm-R3-e79" customClass="UnderlinedTextField" customModule="sidekick" customModuleProvider="target">
+                                <rect key="frame" x="57" y="302" width="300" height="40"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="5mX-kR-8qw"/>
                                     <constraint firstAttribute="height" constant="40" id="kxR-Dg-EpW"/>
                                 </constraints>
                                 <color key="textColor" name="white"/>
@@ -494,25 +495,67 @@ upcoming events and plans</string>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isUnderlined" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmB-Ok-EJw">
-                                <rect key="frame" x="50" y="662" width="239" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAd-As-HQQ">
+                                <rect key="frame" x="57" y="382" width="180.5" height="26"/>
+                                <fontDescription key="fontDescription" name="BalooBhai2-Regular" family="Baloo Bhai 2" pointSize="22"/>
+                                <color key="textColor" name="white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" placeholder="full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6TP-TH-abp" customClass="UnderlinedTextField" customModule="sidekick" customModuleProvider="target">
+                                <rect key="frame" x="57" y="428" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4yc-db-MMb"/>
+                                    <constraint firstAttribute="width" constant="300" id="P8q-53-CI8"/>
+                                </constraints>
+                                <color key="textColor" name="white"/>
                                 <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
-                                <state key="normal" title="Already have an account? Sign in">
-                                    <color key="titleColor" name="white"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" textContentType="name"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isUnderlined" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BZ-LQ-aB3" customClass="CustomButton" customModule="sidekick" customModuleProvider="target">
+                                <rect key="frame" x="57" y="672" width="300" height="45"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.99607843139999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="1Y1-yR-moR"/>
+                                    <constraint firstAttribute="width" constant="300" id="GX3-9S-NIY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="16"/>
+                                <state key="normal" title="Allow">
+                                    <color key="titleColor" name="navy"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasGradient" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" name="white"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="white"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasShadow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasCornerRadius" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="imP-Cp-QMn" kind="show" id="zOb-oc-kHa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.72149829499999996" green="0.77102421639999996" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="LMg-82-hbR" firstAttribute="bottom" secondItem="vmB-Ok-EJw" secondAttribute="bottom" constant="169" id="BGc-vQ-exO"/>
-                            <constraint firstItem="vmB-Ok-EJw" firstAttribute="leading" secondItem="LMg-82-hbR" secondAttribute="leading" constant="50" id="BtG-rQ-5aS"/>
-                            <constraint firstItem="lQX-W0-bwN" firstAttribute="centerX" secondItem="3du-Uw-gu8" secondAttribute="centerX" id="N4d-zW-xkW"/>
-                            <constraint firstItem="yAm-R3-e79" firstAttribute="top" secondItem="QfC-pR-fdV" secondAttribute="bottom" constant="20" id="WUh-gx-lVM"/>
-                            <constraint firstItem="QfC-pR-fdV" firstAttribute="leading" secondItem="LMg-82-hbR" secondAttribute="leading" constant="50" id="aNu-hN-rP3"/>
-                            <constraint firstItem="yAm-R3-e79" firstAttribute="leading" secondItem="LMg-82-hbR" secondAttribute="leading" constant="50" id="gKe-tM-JLl"/>
-                            <constraint firstItem="lQX-W0-bwN" firstAttribute="top" secondItem="LMg-82-hbR" secondAttribute="top" constant="60" id="oem-eg-1ac"/>
-                            <constraint firstItem="LMg-82-hbR" firstAttribute="trailing" secondItem="yAm-R3-e79" secondAttribute="trailing" constant="50" id="ufo-JC-cF1"/>
-                            <constraint firstItem="yAm-R3-e79" firstAttribute="centerY" secondItem="3du-Uw-gu8" secondAttribute="centerY" id="zef-Ow-MHX"/>
+                            <constraint firstItem="eAd-As-HQQ" firstAttribute="leading" secondItem="QfC-pR-fdV" secondAttribute="leading" id="3Xg-hg-5hq"/>
+                            <constraint firstItem="6TP-TH-abp" firstAttribute="centerY" secondItem="3du-Uw-gu8" secondAttribute="centerY" id="9yH-VV-UdM"/>
+                            <constraint firstItem="6TP-TH-abp" firstAttribute="top" secondItem="eAd-As-HQQ" secondAttribute="bottom" constant="20" id="AtQ-ER-EtJ"/>
+                            <constraint firstItem="lQX-W0-bwN" firstAttribute="top" secondItem="LMg-82-hbR" secondAttribute="top" constant="60" id="GoT-fl-idp"/>
+                            <constraint firstItem="yAm-R3-e79" firstAttribute="centerX" secondItem="3du-Uw-gu8" secondAttribute="centerX" id="HUR-at-uql"/>
+                            <constraint firstItem="yAm-R3-e79" firstAttribute="leading" secondItem="QfC-pR-fdV" secondAttribute="leading" id="IQf-1v-tMP"/>
+                            <constraint firstItem="yAm-R3-e79" firstAttribute="top" secondItem="QfC-pR-fdV" secondAttribute="bottom" constant="20" id="MjQ-Ul-WbJ"/>
+                            <constraint firstItem="LMg-82-hbR" firstAttribute="bottom" secondItem="4BZ-LQ-aB3" secondAttribute="bottom" constant="145" id="O6z-vu-N0Z"/>
+                            <constraint firstItem="eAd-As-HQQ" firstAttribute="top" secondItem="yAm-R3-e79" secondAttribute="bottom" constant="40" id="aLW-Rf-QRN"/>
+                            <constraint firstItem="6TP-TH-abp" firstAttribute="leading" secondItem="QfC-pR-fdV" secondAttribute="leading" id="dPq-cY-m31"/>
+                            <constraint firstItem="6TP-TH-abp" firstAttribute="centerX" secondItem="3du-Uw-gu8" secondAttribute="centerX" id="dWG-ZM-USb"/>
+                            <constraint firstItem="lQX-W0-bwN" firstAttribute="centerX" secondItem="3du-Uw-gu8" secondAttribute="centerX" id="ih6-tO-vF8"/>
+                            <constraint firstItem="4BZ-LQ-aB3" firstAttribute="centerX" secondItem="3du-Uw-gu8" secondAttribute="centerX" id="zew-QA-Y6f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LMg-82-hbR"/>
                         <userDefinedRuntimeAttributes>
@@ -533,7 +576,7 @@ upcoming events and plans</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LdQ-ky-8Db"/>
+        <segue reference="EHz-bf-lS9"/>
         <segue reference="THL-EN-dhJ"/>
     </inferredMetricsTieBreakers>
     <resources>
