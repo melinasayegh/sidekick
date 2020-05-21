@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lB3-JQ-b01">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lhK-rl-3tx">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -26,7 +26,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="6Dq-i2-Xdn">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="6Dq-i2-Xdn">
                                 <rect key="frame" x="87" y="94" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="6bd-q3-ZrU"/>
@@ -56,6 +56,7 @@
                                 <state key="normal" title="Sign up"/>
                                 <connections>
                                     <action selector="signUpButtonTapped:" destination="lB3-JQ-b01" eventType="touchUpInside" id="n1D-Oc-Zbv"/>
+                                    <segue destination="vmf-At-LTR" kind="show" id="JSg-vm-s5V"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTk-36-lOb" customClass="CustomButton" customModule="sidekick" customModuleProvider="target">
@@ -71,6 +72,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signInButtonTapped:" destination="lB3-JQ-b01" eventType="touchUpInside" id="P7H-o1-QSw"/>
+                                    <segue destination="5ZB-2s-P6J" kind="show" id="6Kk-PK-HSw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aep-fg-bEa">
@@ -79,14 +81,6 @@
                                 <color key="textColor" red="0.08235294118" green="0.086274509799999996" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2A-uf-dhd">
-                                <rect key="frame" x="20" y="44" width="94" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="back to home"/>
-                                <connections>
-                                    <segue destination="t5m-wB-0kT" kind="show" id="F74-2c-KTG"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in with " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xT-Qr-MDN">
                                 <rect key="frame" x="163.5" y="705" width="87.5" height="19"/>
                                 <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
@@ -132,6 +126,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kSl-bm-9Or"/>
                     </view>
+                    <navigationItem key="navigationItem" id="URQ-Tr-dCE"/>
                     <connections>
                         <outlet property="signInButton" destination="DTk-36-lOb" id="7ae-75-cew"/>
                         <outlet property="signUpButton" destination="v05-ug-Z4u" id="rUB-Su-oof"/>
@@ -139,22 +134,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Nc-RM-lfb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5320.289855072464" y="282.58928571428572"/>
+            <point key="canvasLocation" x="-4410.144927536232" y="282.58928571428572"/>
         </scene>
-        <!--Home-->
-        <scene sceneID="xLY-g7-aWh">
+        <!--SignUp-->
+        <scene sceneID="jbe-ND-5hd">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="t5m-wB-0kT" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="AaN-xW-Ipt"/>
+                <viewControllerPlaceholder storyboardName="SignUp" id="vmf-At-LTR" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dJh-zP-Q5l"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yFL-sc-nDE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="krO-Y7-RiD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4527" y="59"/>
+            <point key="canvasLocation" x="-3749.275362318841" y="264.50892857142856"/>
+        </scene>
+        <!--SignIn-->
+        <scene sceneID="gdc-Ra-M6w">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignIn" id="5ZB-2s-P6J" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zIT-W8-Yvd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6sF-Af-ZbO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3752.898550724638" y="298.66071428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Y8D-BX-Let">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="lhK-rl-3tx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Uuw-T2-bmR">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lB3-JQ-b01" kind="relationship" relationship="rootViewController" id="haw-qH-hXR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWc-eA-suD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5320.289855072464" y="282.58928571428572"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="3348" height="3153"/>
         <image name="facebook" width="158" height="157"/>
         <image name="google" width="157" height="157"/>
+        <image name="logo" width="3348" height="3153"/>
     </resources>
 </document>

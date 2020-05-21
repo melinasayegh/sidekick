@@ -3,15 +3,51 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Onboarding Page View Controller-->
-        <scene sceneID="1dh-Sf-Bdt">
+        <!--View Controller-->
+        <scene sceneID="l0F-sC-qwG">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="QtT-Zy-kVb" customClass="OnboardingPageViewController" customModule="sidekick" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="p2o-kb-GuG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="dAJ-9q-YAG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gvw-sO-mIl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="738-bc-WRz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nLI-xf-w8Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BA6-KK-4G0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="128"/>
+            <point key="canvasLocation" x="1055.072463768116" y="126.5625"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="7GQ-Y6-XQz">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="iTT-gw-ygu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbh-Vb-q0T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1884" y="127"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xwD-eI-hBe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="35Y-Ly-0Is" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DFS-4v-6DR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dAJ-9q-YAG" kind="relationship" relationship="rootViewController" id="1Sm-k8-cO7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ow-N7-h3O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.92753623188406" y="126.5625"/>
         </scene>
     </scenes>
 </document>

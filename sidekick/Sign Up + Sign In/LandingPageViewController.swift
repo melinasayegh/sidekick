@@ -24,7 +24,9 @@ class LandingPageViewController: UIViewController {
     func setupButtons() {
         // set up buttons, change colors
         // sign up button
-        self.signUpButton.setGradientBackground(colorOne: Colors.gradientGreen, colorTwo: Colors.gradientGreenBlue, isRounded: true)
+        self.signUpButton.setGradientBackgroundFourColors(colorOne: Colors.gradientBlue, colorTwo: Colors.gradientBlueGreen,
+                                                          colorThree: Colors.gradientGreenBlue, colorFour: Colors.gradientGreen,
+                                                          isRounded: true)
         
         // sign in button
         self.signInButton.backgroundColor = Colors.white
@@ -32,11 +34,6 @@ class LandingPageViewController: UIViewController {
         self.signInButton.setTitleColor(Colors.navy, for: .normal)
     }
     
-    @IBAction func signUpButtonTapped(_ sender: UIButton) {
-    }
-    
-    @IBAction func signInButtonTapped(_ sender: UIButton) {
-    }
     
     
 }

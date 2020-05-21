@@ -17,9 +17,10 @@ struct Colors {
     static let grey = UIColor.rgba(red: 239, green: 239, blue: 239, alpha: 1)
     static let lightGrey = UIColor.rgba(red: 21, green: 22, blue: 65, alpha: 0.04)
     
-    static let gradientGreen = UIColor.rgba(red: 205, green: 223, blue: 113, alpha: 1)
-    static let gradientGreenBlue = UIColor.rgba(red: 109, green: 196, blue: 151, alpha: 1)
-    static let gradientBlue = UIColor.rgba(red: 46, green: 49, blue: 146, alpha: 1)
+    static let gradientGreen = UIColor.rgba(red: 199, green: 221, blue: 106, alpha: 1)
+    static let gradientGreenBlue = UIColor.rgba(red: 131, green: 197, blue: 142, alpha: 1)
+    static let gradientBlueGreen = UIColor.rgba(red: 94, green: 169, blue: 153, alpha: 1)
+    static let gradientBlue = UIColor.rgba(red: 65, green: 111, blue: 152, alpha: 1)
     
     static let gradientPink = UIColor.rgba(red: 238, green: 42, blue: 123, alpha: 1)
     static let gradientOrange = UIColor.rgba(red: 241, green: 93, blue: 36, alpha: 1)

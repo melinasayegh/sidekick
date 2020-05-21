@@ -15,13 +15,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VKv-6o-uN5">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VKv-6o-uN5">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bird" translatesAutoresizingMaskIntoConstraints="NO" id="bUj-oG-3Yz">
+                                        <rect key="frame" x="107" y="152" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="Gib-du-Lve"/>
+                                            <constraint firstAttribute="width" constant="200" id="cAq-L2-qsu"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.56862745098039214" green="0.79607843137254897" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bUj-oG-3Yz" firstAttribute="centerX" secondItem="VKv-6o-uN5" secondAttribute="centerX" id="Tpi-nM-yd6"/>
+                                    <constraint firstItem="bUj-oG-3Yz" firstAttribute="top" secondItem="VKv-6o-uN5" secondAttribute="topMargin" constant="100" id="vWn-hO-zTl"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="VKv-6o-uN5" secondAttribute="bottom" id="19u-Ev-MHI"/>
+                            <constraint firstItem="VKv-6o-uN5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OET-cp-uVF"/>
+                            <constraint firstItem="VKv-6o-uN5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uMz-Kp-GEN"/>
+                            <constraint firstItem="VKv-6o-uN5" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="vWp-H3-8ak"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -30,4 +48,7 @@
             <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bird" width="2767" height="2605"/>
+    </resources>
 </document>

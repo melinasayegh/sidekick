@@ -16,6 +16,11 @@
 		F32A798F24721F8600F0D1AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32A798D24721F8600F0D1AF /* LaunchScreen.storyboard */; };
 		F32A799A24721F8600F0D1AF /* sidekickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32A799924721F8600F0D1AF /* sidekickTests.swift */; };
 		F32A79A524721F8600F0D1AF /* sidekickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32A79A424721F8600F0D1AF /* sidekickUITests.swift */; };
+		F3A4E0BC24748CF000CC5003 /* EnableLocationServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4E0BB24748CF000CC5003 /* EnableLocationServicesViewController.swift */; };
+		F3A4E0BE2474950200CC5003 /* EnableNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4E0BD2474950200CC5003 /* EnableNotificationsViewController.swift */; };
+		F3A4E0C02474953D00CC5003 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4E0BF2474953D00CC5003 /* GetStartedViewController.swift */; };
+		F3A4E0C424749CF400CC5003 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4E0C324749CF400CC5003 /* GradientView.swift */; };
+		F3A4E0C82474B4AF00CC5003 /* OnboardingBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4E0C72474B4AF00CC5003 /* OnboardingBaseViewController.swift */; };
 		F3D1235224731E36008389D4 /* Muli-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1233B24731D01008389D4 /* Muli-Italic-VariableFont_wght.ttf */; };
 		F3D1235324731E39008389D4 /* Muli-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1233C24731D01008389D4 /* Muli-VariableFont_wght.ttf */; };
 		F3D1235424731E41008389D4 /* Muli-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3D1234D24731D01008389D4 /* Muli-LightItalic.ttf */; };
@@ -90,6 +95,11 @@
 		F32A79A024721F8600F0D1AF /* sidekickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sidekickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32A79A424721F8600F0D1AF /* sidekickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sidekickUITests.swift; sourceTree = "<group>"; };
 		F32A79A624721F8600F0D1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3A4E0BB24748CF000CC5003 /* EnableLocationServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableLocationServicesViewController.swift; sourceTree = "<group>"; };
+		F3A4E0BD2474950200CC5003 /* EnableNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableNotificationsViewController.swift; sourceTree = "<group>"; };
+		F3A4E0BF2474953D00CC5003 /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
+		F3A4E0C324749CF400CC5003 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		F3A4E0C72474B4AF00CC5003 /* OnboardingBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBaseViewController.swift; sourceTree = "<group>"; };
 		F3D1233B24731D01008389D4 /* Muli-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		F3D1233C24731D01008389D4 /* Muli-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		F3D1233E24731D01008389D4 /* Muli-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -185,17 +195,12 @@
 				F3FC045724727E65006BCE6A /* Storyboards */,
 				F32A798024721F8500F0D1AF /* AppDelegate.swift */,
 				F3FC044D24726FAE006BCE6A /* AppConstants.swift */,
-				F3D1237824733833008389D4 /* LandingPageViewController.swift */,
-				F3D12374247335C5008389D4 /* SignUpViewController.swift */,
-				F3D1237C247338EF008389D4 /* OnboardingPageViewController.swift */,
-				F3D1237A2473384E008389D4 /* SignInViewController.swift */,
+				F3A4E0B3247487F900CC5003 /* Sign Up + Sign In */,
 				F32A798424721F8500F0D1AF /* HomeViewController.swift */,
 				F3FC044B24726A74006BCE6A /* ProfileViewController.swift */,
 				F32A798624721F8500F0D1AF /* PlansViewController.swift */,
 				F32A798224721F8500F0D1AF /* SceneDelegate.swift */,
-				F3D1237E24734030008389D4 /* CustomButton.swift */,
-				F3FC044F24727056006BCE6A /* RgbaUIColorExtension.swift */,
-				F3D12372247331C1008389D4 /* UIView+Extension.swift */,
+				F3A4E0BA24748BE500CC5003 /* Extensions */,
 				F32A798B24721F8600F0D1AF /* Assets.xcassets */,
 				F32A799024721F8600F0D1AF /* Info.plist */,
 				F3D1233924731CF3008389D4 /* Fonts */,
@@ -219,6 +224,32 @@
 				F32A79A624721F8600F0D1AF /* Info.plist */,
 			);
 			path = sidekickUITests;
+			sourceTree = "<group>";
+		};
+		F3A4E0B3247487F900CC5003 /* Sign Up + Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				F3D1237824733833008389D4 /* LandingPageViewController.swift */,
+				F3D12374247335C5008389D4 /* SignUpViewController.swift */,
+				F3D1237A2473384E008389D4 /* SignInViewController.swift */,
+				F3D1237C247338EF008389D4 /* OnboardingPageViewController.swift */,
+				F3A4E0BB24748CF000CC5003 /* EnableLocationServicesViewController.swift */,
+				F3A4E0BD2474950200CC5003 /* EnableNotificationsViewController.swift */,
+				F3A4E0BF2474953D00CC5003 /* GetStartedViewController.swift */,
+				F3A4E0C72474B4AF00CC5003 /* OnboardingBaseViewController.swift */,
+			);
+			path = "Sign Up + Sign In";
+			sourceTree = "<group>";
+		};
+		F3A4E0BA24748BE500CC5003 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3D1237E24734030008389D4 /* CustomButton.swift */,
+				F3FC044F24727056006BCE6A /* RgbaUIColorExtension.swift */,
+				F3D12372247331C1008389D4 /* UIView+Extension.swift */,
+				F3A4E0C324749CF400CC5003 /* GradientView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F3D1233924731CF3008389D4 /* Fonts */ = {
@@ -281,13 +312,13 @@
 			isa = PBXGroup;
 			children = (
 				F32A798824721F8500F0D1AF /* Main.storyboard */,
+				F3D1237624733824008389D4 /* LandingPage.storyboard */,
+				F3FC04582472813E006BCE6A /* SignUp.storyboard */,
+				F3FC045C24728184006BCE6A /* Onboarding.storyboard */,
+				F3FC045A24728151006BCE6A /* SignIn.storyboard */,
 				F3FC045124727D77006BCE6A /* Home.storyboard */,
 				F3FC045324727D86006BCE6A /* Plans.storyboard */,
 				F3FC045524727D91006BCE6A /* Profile.storyboard */,
-				F3FC04582472813E006BCE6A /* SignUp.storyboard */,
-				F3FC045A24728151006BCE6A /* SignIn.storyboard */,
-				F3FC045C24728184006BCE6A /* Onboarding.storyboard */,
-				F3D1237624733824008389D4 /* LandingPage.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -454,8 +485,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3D1237B2473384E008389D4 /* SignInViewController.swift in Sources */,
+				F3A4E0BC24748CF000CC5003 /* EnableLocationServicesViewController.swift in Sources */,
+				F3A4E0C02474953D00CC5003 /* GetStartedViewController.swift in Sources */,
 				F3FC045024727056006BCE6A /* RgbaUIColorExtension.swift in Sources */,
 				F32A798724721F8500F0D1AF /* PlansViewController.swift in Sources */,
+				F3A4E0C424749CF400CC5003 /* GradientView.swift in Sources */,
 				F3D12373247331C1008389D4 /* UIView+Extension.swift in Sources */,
 				F3FC044E24726FAE006BCE6A /* AppConstants.swift in Sources */,
 				F32A798524721F8500F0D1AF /* HomeViewController.swift in Sources */,
@@ -463,6 +497,8 @@
 				F3D1237D247338EF008389D4 /* OnboardingPageViewController.swift in Sources */,
 				F3D1237924733833008389D4 /* LandingPageViewController.swift in Sources */,
 				F3D12375247335C5008389D4 /* SignUpViewController.swift in Sources */,
+				F3A4E0BE2474950200CC5003 /* EnableNotificationsViewController.swift in Sources */,
+				F3A4E0C82474B4AF00CC5003 /* OnboardingBaseViewController.swift in Sources */,
 				F3D1237F24734030008389D4 /* CustomButton.swift in Sources */,
 				F32A798124721F8500F0D1AF /* AppDelegate.swift in Sources */,
 				F32A798324721F8500F0D1AF /* SceneDelegate.swift in Sources */,
