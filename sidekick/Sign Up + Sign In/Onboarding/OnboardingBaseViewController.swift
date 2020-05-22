@@ -13,12 +13,6 @@ class OnboardingBaseViewController: UIViewController {
 
     @IBOutlet var contentView: UIView!
     
-    let questionDataArray = ["How do you get around?",
-                             "Are you adventurous?",
-                             "Which of the following describes you?",
-                             "How do you feel about crowds?",
-                             "What type of events do you like to attend?"]
-    
     var currentQuestionPageIndex = 0
     
     override func viewDidLoad() {
@@ -63,7 +57,7 @@ class OnboardingBaseViewController: UIViewController {
     
     func detailViewControllerAt(pageIndex: Int) -> OnboardingQuestionViewController? {
         
-        if pageIndex >= questionDataArray.count || questionDataArray.count == 0 {
+        if pageIndex >= Model.questionDataArray.count || Model.questionDataArray.count == 0 {
             return nil
         }
         
@@ -72,7 +66,9 @@ class OnboardingBaseViewController: UIViewController {
         }
         
         questionViewController.index = pageIndex
-        questionViewController.questionText = questionDataArray[pageIndex]
+        questionViewController.questionText = Model.questionDataArray[pageIndex]
+        
+        
         
         return questionViewController
     }
@@ -85,7 +81,7 @@ extension OnboardingBaseViewController: UIPageViewControllerDelegate, UIPageView
     }
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
-        return questionDataArray.count
+        return Model.questionDataArray.count
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -115,7 +111,7 @@ extension OnboardingBaseViewController: UIPageViewControllerDelegate, UIPageView
             return nil
         }
         
-        if currentIndex == questionDataArray.count {
+        if currentIndex == Model.questionDataArray.count {
             return nil
         }
         

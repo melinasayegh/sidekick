@@ -10,7 +10,7 @@ import UIKit
 
 extension UIView {
     
-    func setGradientBackgroundTwoColors(colorOne: UIColor, colorTwo: UIColor, isRounded: Bool) {
+    func setGradientBackgroundTwoColors(colorOne: UIColor, colorTwo: UIColor, cornerRadius: Int) {
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = bounds
@@ -18,17 +18,14 @@ extension UIView {
         gradientLayer.locations = [0.0, 1.0]
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
-        
-        if isRounded {
-            gradientLayer.cornerRadius = 23
-        }
+        gradientLayer.cornerRadius = CGFloat(cornerRadius)
         
         layer.insertSublayer(gradientLayer, at: 0)
         
     }
     
     // horizontal gradient
-    func setGradientBackgroundFourColors(colorOne: UIColor, colorTwo: UIColor, colorThree: UIColor, colorFour: UIColor, isRounded: Bool) {
+    func setGradientBackgroundFourColors(colorOne: UIColor, colorTwo: UIColor, colorThree: UIColor, colorFour: UIColor, cornerRadius: Int) {
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = bounds
@@ -36,10 +33,7 @@ extension UIView {
         gradientLayer.locations = [0.0, 0.3, 0.7, 1.0]
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.4)
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.6)
-        
-        if isRounded {
-            gradientLayer.cornerRadius = 23
-        }
+        gradientLayer.cornerRadius = CGFloat(cornerRadius)
         
         layer.insertSublayer(gradientLayer, at: 0)
         

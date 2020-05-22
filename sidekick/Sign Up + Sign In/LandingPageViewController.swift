@@ -19,9 +19,7 @@ class LandingPageViewController: UIViewController {
         super.viewDidLoad()
 
         // edit sign up button to be blue gradient
-        self.signUpButton.setGradientBackgroundFourColors(colorOne: Colors.gradientBlue, colorTwo: Colors.gradientBlueGreen,
-        colorThree: Colors.gradientGreenBlue, colorFour: Colors.gradientGreen,
-        isRounded: true)
+        self.signUpButton.setGradientBackgroundFourColors(colorOne: Colors.gradientBlue, colorTwo: Colors.gradientBlueGreen, colorThree: Colors.gradientGreenBlue, colorFour: Colors.gradientGreen, cornerRadius: 23)
     }
     
 }
