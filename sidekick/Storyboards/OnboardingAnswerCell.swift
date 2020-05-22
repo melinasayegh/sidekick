@@ -10,29 +10,32 @@ import UIKit
 
 class OnboardingAnswerCell: UITableViewCell {
     
-    @IBOutlet var answerButton: UIButton!
+    
+    @IBOutlet var answerView: UIView!
+    @IBOutlet var answerLabel: UILabel!
     
     var answerIndex: Int?
     
     func setAnswerCell(answer: OnboardingAnswer) {
-        answerButton.setTitle(answer.text, for: .normal)
+        
+        answerLabel.text = answer.text
+        answerView.layer.cornerRadius = 8
         if answer.isSelected {
             selectCell()
         } else {
             unselectCell()
         }
-        answerButton.contentEdgeInsets = UIEdgeInsets(top: 0, left: 28, bottom: 0, right: 0)
     }
     
     func selectCell() {
-        answerButton.setGradientBackgroundTwoColors(colorOne: Colors.gradientBlueGreen, colorTwo: Colors.gradientGreen, cornerRadius: 8)
-        answerButton.setTitleColor(Colors.white, for: .normal)
+        answerView.setGradientBackgroundTwoColors(colorOne: Colors.gradientBlueGreen, colorTwo: Colors.gradientGreen, cornerRadius: 8)
+        answerLabel.textColor = Colors.white
+        
     }
     
     func unselectCell() {
-        answerButton.backgroundColor = Colors.lightGrey
-        answerButton.setTitleColor(Colors.navy, for: .normal)
-        answerButton.layer.cornerRadius = 8
+        answerView.backgroundColor = Colors.lightGrey
+        answerLabel.textColor = Colors.navy
     }
 }
 

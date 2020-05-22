@@ -210,10 +210,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTP-KP-wLD">
-                                <rect key="frame" x="77" y="169" width="300" height="55"/>
+                                <rect key="frame" x="77" y="169" width="270" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="YJY-Hh-QwD"/>
-                                    <constraint firstAttribute="width" constant="300" id="ur8-tG-TEO"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Example of a 2 lined question Lorem Ipsum">
@@ -227,45 +226,42 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="El7-SV-fiu">
-                                <rect key="frame" x="32" y="244" width="350" height="500"/>
+                                <rect key="frame" x="57" y="244" width="300" height="500"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" name="lightGreen"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="fx9-SZ-gHO"/>
                                     <constraint firstAttribute="height" constant="500" id="oix-7l-NuJ"/>
+                                    <constraint firstAttribute="width" constant="300" id="qli-hy-0ba"/>
                                 </constraints>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OnboardingAnswerCell" rowHeight="100" id="ON8-ht-1Dn" customClass="OnboardingAnswerCell" customModule="sidekick" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="350" height="100"/>
+                                        <rect key="frame" x="0.0" y="28" width="300" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ON8-ht-1Dn" id="lgI-ps-193">
-                                            <rect key="frame" x="0.0" y="0.0" width="350" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qSy-v6-ubY">
-                                                    <rect key="frame" x="20" y="11" width="310" height="73"/>
-                                                    <color key="backgroundColor" name="grey"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="50" id="iIb-xp-N3d"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Example with 2 lines Lorem Ipsum Lorem Ipsum Lorem Ipsum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rnn-xq-JQt">
+                                                    <rect key="frame" x="20" y="10" width="260" height="80"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
-                                                    <color key="tintColor" name="navy"/>
-                                                    <state key="normal" title="Button">
-                                                        <color key="titleColor" name="navy"/>
-                                                    </state>
-                                                </button>
+                                                    <color key="textColor" name="navy"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <color key="backgroundColor" name="lightGrey"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="qSy-v6-ubY" secondAttribute="bottom" constant="5" id="9bw-lS-WCk"/>
-                                                <constraint firstItem="qSy-v6-ubY" firstAttribute="top" secondItem="lgI-ps-193" secondAttribute="topMargin" id="NmH-TH-MTL"/>
-                                                <constraint firstItem="qSy-v6-ubY" firstAttribute="leading" secondItem="lgI-ps-193" secondAttribute="leadingMargin" id="Q7G-r5-gQ4"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="qSy-v6-ubY" secondAttribute="trailing" id="bq5-Kv-BfW"/>
+                                                <constraint firstItem="Rnn-xq-JQt" firstAttribute="leading" secondItem="lgI-ps-193" secondAttribute="leading" constant="20" id="0wh-0a-W46"/>
+                                                <constraint firstAttribute="trailing" secondItem="Rnn-xq-JQt" secondAttribute="trailing" constant="20" id="1MY-Rh-H1D"/>
+                                                <constraint firstAttribute="bottom" secondItem="Rnn-xq-JQt" secondAttribute="bottom" constant="10" id="lWo-1V-yDG"/>
+                                                <constraint firstItem="Rnn-xq-JQt" firstAttribute="top" secondItem="lgI-ps-193" secondAttribute="top" constant="10" id="y8B-OQ-bQ1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="answerButton" destination="qSy-v6-ubY" id="EU2-6I-jaS"/>
+                                            <outlet property="answerLabel" destination="Rnn-xq-JQt" id="cbi-1g-esS"/>
+                                            <outlet property="answerView" destination="lgI-ps-193" id="n2p-g1-dva"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -273,10 +269,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="El7-SV-fiu" firstAttribute="trailing" secondItem="OTP-KP-wLD" secondAttribute="trailing" constant="10" id="2ga-z6-XRg"/>
                             <constraint firstItem="El7-SV-fiu" firstAttribute="centerX" secondItem="U5s-SH-5ET" secondAttribute="centerX" id="6n5-ja-VFR"/>
+                            <constraint firstItem="OTP-KP-wLD" firstAttribute="top" secondItem="U5s-SH-5ET" secondAttribute="topMargin" constant="125" id="EEm-T9-nLm"/>
                             <constraint firstItem="El7-SV-fiu" firstAttribute="top" secondItem="OTP-KP-wLD" secondAttribute="bottom" constant="20" id="Hbf-LY-Uu9"/>
-                            <constraint firstItem="OTP-KP-wLD" firstAttribute="top" secondItem="U5s-SH-5ET" secondAttribute="topMargin" constant="125" id="Sgg-g5-Tne"/>
-                            <constraint firstItem="El7-SV-fiu" firstAttribute="leading" secondItem="OTP-KP-wLD" secondAttribute="leading" constant="-45" id="f81-tP-qva"/>
+                            <constraint firstItem="El7-SV-fiu" firstAttribute="leading" secondItem="OTP-KP-wLD" secondAttribute="leading" constant="-20" id="WBs-X4-JJ3"/>
                         </constraints>
                     </view>
                     <connections>
@@ -294,11 +291,14 @@
         <namedColor name="greenBlue">
             <color red="0.51372549019607838" green="0.77254901960784317" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="grey">
-            <color red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="lightGreen">
             <color red="0.7803921568627451" green="0.8666666666666667" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightGrey">
+            <color red="0.082352941176470587" green="0.086274509803921567" blue="0.25490196078431371" alpha="0.039999999105930328" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="navy">
+            <color red="0.082352941176470587" green="0.086274509803921567" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="navy">
             <color red="0.082352941176470587" green="0.086274509803921567" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

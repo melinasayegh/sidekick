@@ -36,14 +36,30 @@ class OnboardingQuestionViewController: UIViewController {
 
 extension OnboardingQuestionViewController: UITableViewDataSource, UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return answers.count
     }
+
+    // There is just one row in every section
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+
+    // Set the spacing between sections
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30
+    }
     
+    // Make the background color show through
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = UIColor.clear
+        return headerView
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let answer = answers[indexPath.row]
+        let answer = answers[indexPath.section]
         let cell = tableView.dequeueReusableCell(withIdentifier: "OnboardingAnswerCell") as! OnboardingAnswerCell
         
         cell.setAnswerCell(answer: answer)
@@ -53,7 +69,7 @@ extension OnboardingQuestionViewController: UITableViewDataSource, UITableViewDe
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        var selectedAnswer: OnboardingAnswer = Model.answerDataArray[index][indexPath.row]
+        var selectedAnswer: OnboardingAnswer = Model.answerDataArray[index][indexPath.section]
         selectedAnswer.isSelected = true
         
         let selectedCell = self.tableView.cellForRow(at: indexPath) as! OnboardingAnswerCell
@@ -63,7 +79,7 @@ extension OnboardingQuestionViewController: UITableViewDataSource, UITableViewDe
     
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: IndexPath) {
         
-        var unselectedAnswer: OnboardingAnswer = Model.answerDataArray[index][indexPath.row]
+        var unselectedAnswer: OnboardingAnswer = Model.answerDataArray[index][indexPath.section]
         unselectedAnswer.isSelected = false
         
         let unselectedCell = self.tableView.cellForRow(at: indexPath) as! OnboardingAnswerCell
