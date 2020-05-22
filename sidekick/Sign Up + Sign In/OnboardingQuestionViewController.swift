@@ -12,7 +12,7 @@ class OnboardingQuestionViewController: UIViewController {
     
     var index: Int?
     
-    @IBOutlet var questionLabel: UILabel!
+    @IBOutlet weak var questionLabel: UILabel!
     var questionText: String?
     
     @IBOutlet var answerOneTextField: UITextView!
@@ -20,7 +20,7 @@ class OnboardingQuestionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        questionLabel.text = questionText
         // Do any additional setup after loading the view.
     }
     

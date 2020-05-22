@@ -13,12 +13,12 @@ class OnboardingBaseViewController: UIViewController {
 
     @IBOutlet var contentView: UIView!
     
-    let dataSource = ["Question One", "Question Two", "Question Three", "Question Four", "Question Five"]
     let questionDataArray = ["How do you get around?",
                              "Are you adventurous?",
                              "Which of the following describes you?",
                              "How do you feel about crowds?",
                              "What type of events do you like to attend?"]
+    
     var currentQuestionPageIndex = 0
     
     override func viewDidLoad() {
@@ -63,7 +63,7 @@ class OnboardingBaseViewController: UIViewController {
     
     func detailViewControllerAt(pageIndex: Int) -> OnboardingQuestionViewController? {
         
-        if pageIndex >= dataSource.count || dataSource.count == 0 {
+        if pageIndex >= questionDataArray.count || questionDataArray.count == 0 {
             return nil
         }
         
@@ -72,7 +72,7 @@ class OnboardingBaseViewController: UIViewController {
         }
         
         questionViewController.index = pageIndex
-        questionViewController.questionLabel.text = dataSource[pageIndex]
+        questionViewController.questionText = questionDataArray[pageIndex]
         
         return questionViewController
     }
@@ -85,7 +85,7 @@ extension OnboardingBaseViewController: UIPageViewControllerDelegate, UIPageView
     }
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
-        return dataSource.count
+        return questionDataArray.count
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -115,7 +115,7 @@ extension OnboardingBaseViewController: UIPageViewControllerDelegate, UIPageView
             return nil
         }
         
-        if currentIndex == 0 {
+        if currentIndex == questionDataArray.count {
             return nil
         }
         

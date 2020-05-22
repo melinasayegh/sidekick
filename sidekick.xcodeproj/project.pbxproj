@@ -18,8 +18,8 @@
 		F32A79A524721F8600F0D1AF /* sidekickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32A79A424721F8600F0D1AF /* sidekickUITests.swift */; };
 		F33347A024762E4800E5A4A9 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F333479F24762E4800E5A4A9 /* UnderlinedTextField.swift */; };
 		F33347A224763B5100E5A4A9 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33347A124763B5100E5A4A9 /* PasswordViewController.swift */; };
-		F33347A42476486200E5A4A9 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33347A32476486200E5A4A9 /* OnboardingPageViewController.swift */; };
 		F33347A624764CBA00E5A4A9 /* OnboardingQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33347A524764CBA00E5A4A9 /* OnboardingQuestionViewController.swift */; };
+		F35F0218247769C4008AC531 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35F0217247769C4008AC531 /* OnboardingPageViewController.swift */; };
 		F3A4E0BC24748CF000CC5003 /* EnableSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4E0BB24748CF000CC5003 /* EnableSignUpViewController.swift */; };
 		F3A4E0BE2474950200CC5003 /* EnableNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4E0BD2474950200CC5003 /* EnableNotificationsViewController.swift */; };
 		F3A4E0C02474953D00CC5003 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4E0BF2474953D00CC5003 /* GetStartedViewController.swift */; };
@@ -100,8 +100,8 @@
 		F32A79A624721F8600F0D1AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F333479F24762E4800E5A4A9 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
 		F33347A124763B5100E5A4A9 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
-		F33347A32476486200E5A4A9 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		F33347A524764CBA00E5A4A9 /* OnboardingQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingQuestionViewController.swift; sourceTree = "<group>"; };
+		F35F0217247769C4008AC531 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
 		F3A4E0BB24748CF000CC5003 /* EnableSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableSignUpViewController.swift; sourceTree = "<group>"; };
 		F3A4E0BD2474950200CC5003 /* EnableNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableNotificationsViewController.swift; sourceTree = "<group>"; };
 		F3A4E0BF2474953D00CC5003 /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
@@ -241,7 +241,7 @@
 				F3D1237C247338EF008389D4 /* OnboardingPhasesViewController.swift */,
 				F3A4E0C72474B4AF00CC5003 /* OnboardingBaseViewController.swift */,
 				F33347A524764CBA00E5A4A9 /* OnboardingQuestionViewController.swift */,
-				F33347A32476486200E5A4A9 /* OnboardingPageViewController.swift */,
+				F35F0217247769C4008AC531 /* OnboardingPageViewController.swift */,
 				F3D1237A2473384E008389D4 /* SignInViewController.swift */,
 				F3A4E0BB24748CF000CC5003 /* EnableSignUpViewController.swift */,
 				F3A4E0BD2474950200CC5003 /* EnableNotificationsViewController.swift */,
@@ -506,13 +506,13 @@
 				F3FC044C24726A74006BCE6A /* ProfileViewController.swift in Sources */,
 				F3D1237D247338EF008389D4 /* OnboardingPhasesViewController.swift in Sources */,
 				F3D1237924733833008389D4 /* LandingPageViewController.swift in Sources */,
-				F33347A42476486200E5A4A9 /* OnboardingPageViewController.swift in Sources */,
 				F3D12375247335C5008389D4 /* SignUpViewController.swift in Sources */,
 				F3A4E0BE2474950200CC5003 /* EnableNotificationsViewController.swift in Sources */,
 				F33347A024762E4800E5A4A9 /* UnderlinedTextField.swift in Sources */,
 				F3A4E0C82474B4AF00CC5003 /* OnboardingBaseViewController.swift in Sources */,
 				F3D1237F24734030008389D4 /* CustomButton.swift in Sources */,
 				F32A798124721F8500F0D1AF /* AppDelegate.swift in Sources */,
+				F35F0218247769C4008AC531 /* OnboardingPageViewController.swift in Sources */,
 				F32A798324721F8500F0D1AF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

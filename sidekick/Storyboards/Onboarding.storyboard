@@ -14,11 +14,11 @@
         <array key="Muli-Bold.ttf">
             <string>Muli-Bold</string>
         </array>
+        <array key="Muli-Regular.ttf">
+            <string>Muli-Regular</string>
+        </array>
         <array key="Muli-SemiBold.ttf">
             <string>Muli-SemiBold</string>
-        </array>
-        <array key="Muli-VariableFont_wght.ttf">
-            <string>Muli-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -146,54 +146,6 @@
             </objects>
             <point key="canvasLocation" x="1965.217391304348" y="126.5625"/>
         </scene>
-        <!--Onboarding Question View Controller-->
-        <scene sceneID="TyL-yb-rvj">
-            <objects>
-                <viewController storyboardIdentifier="OnboardingQuestionVC" id="WAN-R6-xUP" customClass="OnboardingQuestionViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xbU-s9-esl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1Y-sL-5YM">
-                                <rect key="frame" x="57" y="194" width="300" height="35.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="FZ4-TO-z0t"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="BalooBhai2-Medium" family="Baloo Bhai 2" pointSize="22"/>
-                                <color key="textColor" name="navy"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Example question answer" translatesAutoresizingMaskIntoConstraints="NO" id="5fL-sV-NUH">
-                                <rect key="frame" x="57" y="269.5" width="300" height="40"/>
-                                <color key="backgroundColor" name="lightGrey"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Gks-68-LKR"/>
-                                    <constraint firstAttribute="width" constant="300" id="cly-3h-4m3"/>
-                                </constraints>
-                                <color key="textColor" name="navy"/>
-                                <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" name="pink"/>
-                        <constraints>
-                            <constraint firstItem="5fL-sV-NUH" firstAttribute="centerX" secondItem="xbU-s9-esl" secondAttribute="centerX" id="Q2A-H7-I9O"/>
-                            <constraint firstItem="5fL-sV-NUH" firstAttribute="top" secondItem="z1Y-sL-5YM" secondAttribute="bottom" constant="40" id="Rb6-n8-dbT"/>
-                            <constraint firstItem="5fL-sV-NUH" firstAttribute="leading" secondItem="z1Y-sL-5YM" secondAttribute="leading" id="fX1-LH-kmY"/>
-                            <constraint firstItem="z1Y-sL-5YM" firstAttribute="top" secondItem="4xN-ok-cXP" secondAttribute="top" constant="150" id="wSw-t0-ZU6"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="4xN-ok-cXP"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="XO0-ue-tsQ"/>
-                    <connections>
-                        <outlet property="answerOneTextField" destination="5fL-sV-NUH" id="uPt-Up-nBs"/>
-                        <outlet property="questionLabel" destination="z1Y-sL-5YM" id="4eW-Rg-6Mz"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1jd-rz-14E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3442.0289855072465" y="126.5625"/>
-        </scene>
         <!--Onboarding Base View Controller-->
         <scene sceneID="NXf-nX-7bn">
             <objects>
@@ -202,23 +154,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dgz-N6-EKL">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" name="white"/>
-                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OQe-1Q-h8v">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="727"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="e7y-lT-rMA" kind="embed" id="qGF-ks-BMV"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" name="white"/>
-                        <constraints>
-                            <constraint firstItem="Dgz-N6-EKL" firstAttribute="top" secondItem="03w-pV-Ulx" secondAttribute="top" id="5je-ub-nr6"/>
-                            <constraint firstAttribute="bottom" secondItem="Dgz-N6-EKL" secondAttribute="bottom" id="8mT-lz-cRe"/>
-                            <constraint firstItem="Dgz-N6-EKL" firstAttribute="leading" secondItem="y8m-gV-BDM" secondAttribute="leading" id="VUF-PC-6P0"/>
-                            <constraint firstItem="Dgz-N6-EKL" firstAttribute="trailing" secondItem="y8m-gV-BDM" secondAttribute="trailing" id="sic-XL-dpI"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="y8m-gV-BDM"/>
                     </view>
                     <navigationItem key="navigationItem" id="wVX-L1-PXO"/>
                     <connections>
-                        <outlet property="contentView" destination="Dgz-N6-EKL" id="Doh-Fe-SE2"/>
+                        <outlet property="contentView" destination="OQe-1Q-h8v" id="7Ot-dv-vE4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qvU-eT-3tK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -250,6 +199,52 @@
             </objects>
             <point key="canvasLocation" x="1055.072463768116" y="126.5625"/>
         </scene>
+        <!--Onboarding Question View Controller-->
+        <scene sceneID="vQM-aF-Uzg">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingQuestionVC" id="e7y-lT-rMA" customClass="OnboardingQuestionViewController" customModule="sidekick" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U5s-SH-5ET">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="727"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTP-KP-wLD">
+                                <rect key="frame" x="57" y="194" width="300" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="ur8-tG-TEO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BalooBhai2-Medium" family="Baloo Bhai 2" pointSize="22"/>
+                                <color key="textColor" name="navy"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Example question answer" translatesAutoresizingMaskIntoConstraints="NO" id="Huf-tO-nOO">
+                                <rect key="frame" x="57" y="260" width="300" height="40"/>
+                                <color key="backgroundColor" name="lightGrey"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6W1-W6-Cno"/>
+                                    <constraint firstAttribute="width" constant="300" id="SMZ-fe-5Ts"/>
+                                </constraints>
+                                <color key="textColor" name="navy"/>
+                                <fontDescription key="fontDescription" name="Muli-Regular" family="Muli" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Huf-tO-nOO" firstAttribute="top" secondItem="OTP-KP-wLD" secondAttribute="bottom" constant="40" id="7Rl-ml-V8X"/>
+                            <constraint firstItem="Huf-tO-nOO" firstAttribute="centerX" secondItem="U5s-SH-5ET" secondAttribute="centerX" id="9Fu-cP-tkS"/>
+                            <constraint firstItem="OTP-KP-wLD" firstAttribute="top" secondItem="U5s-SH-5ET" secondAttribute="topMargin" constant="150" id="Sgg-g5-Tne"/>
+                            <constraint firstItem="Huf-tO-nOO" firstAttribute="leading" secondItem="OTP-KP-wLD" secondAttribute="leading" id="x3j-zx-ipF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerOneTextField" destination="Huf-tO-nOO" id="J0U-4b-xl8"/>
+                        <outlet property="questionLabel" destination="OTP-KP-wLD" id="W22-ha-cfV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fgt-kK-CXB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3490" y="69"/>
+        </scene>
     </scenes>
     <resources>
         <image name="close" width="210" height="209"/>
@@ -260,13 +255,10 @@
             <color red="0.7803921568627451" green="0.8666666666666667" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="lightGrey">
-            <color red="0.082352941176470587" green="0.086274509803921567" blue="0.25490196078431371" alpha="0.040227921843528747" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.082352941176470587" green="0.086274509803921567" blue="0.25490196078431371" alpha="0.039999999105930328" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="navy">
             <color red="0.082352941176470587" green="0.086274509803921567" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="pink">
-            <color red="0.93333333333333335" green="0.16470588235294117" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="white">
             <color red="0.9882352941176471" green="0.99607843137254903" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
