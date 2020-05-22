@@ -50,4 +50,23 @@ extension OnboardingQuestionViewController: UITableViewDataSource, UITableViewDe
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        var selectedAnswer: OnboardingAnswer = Model.answerDataArray[index][indexPath.row]
+        selectedAnswer.isSelected = true
+        
+        let selectedCell = self.tableView.cellForRow(at: indexPath) as! OnboardingAnswerCell
+        selectedCell.selectCell()
+        
+    }
+    
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: IndexPath) {
+        
+        var unselectedAnswer: OnboardingAnswer = Model.answerDataArray[index][indexPath.row]
+        unselectedAnswer.isSelected = false
+        
+        let unselectedCell = self.tableView.cellForRow(at: indexPath) as! OnboardingAnswerCell
+        unselectedCell.unselectCell()
+    }
 }

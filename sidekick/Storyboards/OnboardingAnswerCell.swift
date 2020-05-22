@@ -16,19 +16,23 @@ class OnboardingAnswerCell: UITableViewCell {
     
     func setAnswerCell(answer: OnboardingAnswer) {
         answerButton.setTitle(answer.text, for: .normal)
-        
         if answer.isSelected {
-            answerButton.setGradientBackgroundTwoColors(colorOne: Colors.gradientBlueGreen, colorTwo: Colors.gradientGreen, cornerRadius: 8)
-            answerButton.setTitleColor(Colors.white, for: .normal)
-            
-            
+            selectCell()
         } else {
-            answerButton.backgroundColor = Colors.lightGrey
-            answerButton.setTitleColor(Colors.navy, for: .normal)
+            unselectCell()
         }
-        
-        answerButton.layer.cornerRadius = 8
         answerButton.contentEdgeInsets = UIEdgeInsets(top: 0, left: 28, bottom: 0, right: 0)
+    }
+    
+    func selectCell() {
+        answerButton.setGradientBackgroundTwoColors(colorOne: Colors.gradientBlueGreen, colorTwo: Colors.gradientGreen, cornerRadius: 8)
+        answerButton.setTitleColor(Colors.white, for: .normal)
+    }
+    
+    func unselectCell() {
+        answerButton.backgroundColor = Colors.lightGrey
+        answerButton.setTitleColor(Colors.navy, for: .normal)
+        answerButton.layer.cornerRadius = 8
     }
 }
 
