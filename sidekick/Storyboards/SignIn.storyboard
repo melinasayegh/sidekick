@@ -14,7 +14,7 @@
         <array key="Muli-Bold.ttf">
             <string>Muli-Bold</string>
         </array>
-        <array key="Muli-VariableFont_wght.ttf">
+        <array key="Muli-Regular.ttf">
             <string>Muli-Regular</string>
         </array>
     </customFonts>
@@ -22,7 +22,7 @@
         <!--SignInVC-->
         <scene sceneID="mM2-M8-tzv">
             <objects>
-                <viewController storyboardIdentifier="SignInVC" title="SignInVC" id="HH0-FG-GVu" customClass="SignInViewController" customModule="sidekick" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInVC" title="SignInVC" modalPresentationStyle="fullScreen" id="HH0-FG-GVu" customClass="SignInViewController" customModule="sidekick" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z6A-wX-XzS" customClass="GradientView" customModule="sidekick" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

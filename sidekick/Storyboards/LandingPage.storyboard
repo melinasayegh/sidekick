@@ -22,7 +22,7 @@
         <!--LandingPageVC-->
         <scene sceneID="zog-lu-iLz">
             <objects>
-                <viewController storyboardIdentifier="LandingPageVC" title="LandingPageVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lB3-JQ-b01" customClass="LandingPageViewController" customModule="sidekick" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LandingPageVC" title="LandingPageVC" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lB3-JQ-b01" customClass="LandingPageViewController" customModule="sidekick" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KRz-7k-ItV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,7 +182,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Y8D-BX-Let">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="lhK-rl-3tx" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" navigationBarHidden="YES" id="lhK-rl-3tx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Uuw-T2-bmR">
                         <autoresizingMask key="autoresizingMask"/>

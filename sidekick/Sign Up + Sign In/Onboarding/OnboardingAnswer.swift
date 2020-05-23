@@ -10,5 +10,9 @@ import UIKit
 
 struct OnboardingAnswer {
     var text: String
-    var isSelected: Bool
+    var isSelected: Bool = false
+    
+    func isSelectedUpdate() {
+        //isSelected = !isSelected
+    }
 }

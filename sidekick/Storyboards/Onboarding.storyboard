@@ -22,7 +22,7 @@
         <!--OnboardingPhasesVC-->
         <scene sceneID="l0F-sC-qwG">
             <objects>
-                <viewController storyboardIdentifier="OnboardingPhasesVC" title="OnboardingPhasesVC" id="dAJ-9q-YAG" customClass="OnboardingPhasesViewController" customModule="sidekick" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingPhasesVC" title="OnboardingPhasesVC" modalPresentationStyle="fullScreen" id="dAJ-9q-YAG" customClass="OnboardingPhasesViewController" customModule="sidekick" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gvw-sO-mIl" customClass="GradientView" customModule="sidekick" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,11 +146,19 @@
         <!--Onboarding Base View Controller-->
         <scene sceneID="NXf-nX-7bn">
             <objects>
-                <viewController storyboardIdentifier="OnboardingBaseVC" id="fau-ca-9Am" customClass="OnboardingBaseViewController" customModule="sidekick" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingBaseVC" modalPresentationStyle="fullScreen" id="fau-ca-9Am" customClass="OnboardingBaseViewController" customModule="sidekick" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="03w-pV-Ulx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="multiply" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="F7A-DO-66x">
+                                <rect key="frame" x="334" y="107" width="20" height="13.5"/>
+                                <color key="tintColor" name="navy"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="gfm-ud-e4P"/>
+                                    <constraint firstAttribute="height" constant="20" id="klb-gi-ysO"/>
+                                </constraints>
+                            </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQe-1Q-h8v">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="762"/>
                                 <connections>
@@ -161,15 +169,17 @@
                         <color key="backgroundColor" name="white"/>
                         <constraints>
                             <constraint firstItem="y8m-gV-BDM" firstAttribute="bottom" secondItem="OQe-1Q-h8v" secondAttribute="bottom" constant="100" id="8Re-wQ-qh9"/>
+                            <constraint firstItem="F7A-DO-66x" firstAttribute="top" secondItem="y8m-gV-BDM" secondAttribute="top" constant="60" id="CE7-RI-joH"/>
                             <constraint firstItem="OQe-1Q-h8v" firstAttribute="leading" secondItem="y8m-gV-BDM" secondAttribute="leading" id="OEo-Up-c5e"/>
                             <constraint firstItem="OQe-1Q-h8v" firstAttribute="trailing" secondItem="y8m-gV-BDM" secondAttribute="trailing" id="mEQ-6N-oKR"/>
                             <constraint firstItem="OQe-1Q-h8v" firstAttribute="top" secondItem="03w-pV-Ulx" secondAttribute="top" id="mul-2W-4KR"/>
+                            <constraint firstItem="y8m-gV-BDM" firstAttribute="trailing" secondItem="F7A-DO-66x" secondAttribute="trailing" constant="60" id="pK7-is-EuZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="y8m-gV-BDM"/>
                     </view>
                     <navigationItem key="navigationItem" id="wVX-L1-PXO"/>
                     <connections>
-                        <outlet property="contentView" destination="OQe-1Q-h8v" id="7Ot-dv-vE4"/>
+                        <outlet property="contentView" destination="OQe-1Q-h8v" id="Szj-hp-FLJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qvU-eT-3tK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -187,7 +197,7 @@
         <!--Navigation Controller-->
         <scene sceneID="P78-gP-T9X">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Io7-cm-6Wx" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" navigationBarHidden="YES" id="Io7-cm-6Wx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rwI-0q-hIY">
                         <autoresizingMask key="autoresizingMask"/>
@@ -288,6 +298,7 @@
     </scenes>
     <resources>
         <image name="close" width="210" height="209"/>
+        <image name="multiply" catalog="system" width="128" height="111"/>
         <namedColor name="greenBlue">
             <color red="0.51372549019607838" green="0.77254901960784317" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

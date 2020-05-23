@@ -10,7 +10,8 @@ import UIKit
 
 class OnboardingBaseViewController: UIViewController {
     
-
+    @IBOutlet weak var closeImage: UIImage!
+    
     @IBOutlet var contentView: UIView!
     
     var currentQuestionPageIndex = 0
