@@ -21,26 +21,28 @@ class OnboardingAnswerCell: UITableViewCell {
         answerLabel.text = answer.text
         answerView.layer.cornerRadius = 8
         if answer.isSelected {
-            selectCell(answer: answer)
+            selectCell()
         } else {
-            unselectCell(answer: answer)
+            unselectCell()
         }
     }
     
-    func selectCell(answer: OnboardingAnswer) {
+    func selectCell() {
         answerView.setGradientBackgroundTwoColors(colorOne: Colors.gradientBlueGreen, colorTwo: Colors.gradientGreen, cornerRadius: 8)
         answerLabel.textColor = Colors.white
         
-        //answer.isSelected()
-        
     }
     
-    func unselectCell(answer: OnboardingAnswer) {
+    func unselectCell() {
         // remove gradient background
         answerView.backgroundColor = Colors.lightGrey
         answerLabel.textColor = Colors.navy
         
-        //answer.isSelected()
+        // remove gradient layer
+        for layer in answerView.layer.sublayers ?? [] where layer.name == "gradientLayer" {
+                layer.removeFromSuperlayer()
+        }
+        
     }
 }
 

@@ -68,29 +68,26 @@ extension OnboardingQuestionViewController: UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-                
+              
+        // unselect every cell
         for i in 0...((answers.count)-1) {
+            // for every answer
             var answer: OnboardingAnswer = Model.answerDataArray[index][i]
-            let unselectedCell = self.tableView.cellForRow(at: NSIndexPath(row: 0, section: i) as IndexPath) as! OnboardingAnswerCell
-            unselectedCell.unselectCell(answer: answer)
+            answer.isSelected = false
+            
+            // Unselect each row
+            let sectionIndex = NSIndexPath(row: 0, section: i) as IndexPath
+            
+            let unselectedCell =  self.tableView.cellForRow(at: sectionIndex) as! OnboardingAnswerCell
+            unselectedCell.unselectCell()
+            
         }
         
+        // select the selected cell
         let selectedCell = self.tableView.cellForRow(at: indexPath) as! OnboardingAnswerCell
         var selectedAnswer: OnboardingAnswer = Model.answerDataArray[index][indexPath.section]
-        selectedCell.selectCell(answer: selectedAnswer)
-
-        tableView.reloadData()
+        selectedAnswer.isSelected = true
+        selectedCell.selectCell()
         
-    }
-    
-
-    
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: IndexPath) {
-        
-        var unselectedAnswer: OnboardingAnswer = Model.answerDataArray[index][indexPath.section]
-        unselectedAnswer.isSelected = false
-        
-        let unselectedCell = self.tableView.cellForRow(at: indexPath) as! OnboardingAnswerCell
-        unselectedCell.unselectCell(answer: unselectedAnswer)
     }
 }

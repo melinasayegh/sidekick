@@ -14,7 +14,7 @@
         <array key="Muli-Bold.ttf">
             <string>Muli-Bold</string>
         </array>
-        <array key="Muli-Regular.ttf">
+        <array key="Muli-VariableFont_wght.ttf">
             <string>Muli-Regular</string>
         </array>
     </customFonts>
@@ -246,7 +246,7 @@
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OnboardingAnswerCell" rowHeight="100" id="ON8-ht-1Dn" customClass="OnboardingAnswerCell" customModule="sidekick" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="OnboardingAnswerCell" rowHeight="100" id="ON8-ht-1Dn" customClass="OnboardingAnswerCell" customModule="sidekick" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="300" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ON8-ht-1Dn" id="lgI-ps-193">
@@ -285,6 +285,7 @@
                             <constraint firstItem="El7-SV-fiu" firstAttribute="top" secondItem="OTP-KP-wLD" secondAttribute="bottom" constant="20" id="Hbf-LY-Uu9"/>
                             <constraint firstItem="El7-SV-fiu" firstAttribute="leading" secondItem="OTP-KP-wLD" secondAttribute="leading" constant="-20" id="WBs-X4-JJ3"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="iYh-Om-Jg8"/>
                     </view>
                     <connections>
                         <outlet property="questionLabel" destination="OTP-KP-wLD" id="W22-ha-cfV"/>

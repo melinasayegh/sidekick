@@ -13,6 +13,7 @@ extension UIView {
     func setGradientBackgroundTwoColors(colorOne: UIColor, colorTwo: UIColor, cornerRadius: Int) {
         
         let gradientLayer = CAGradientLayer()
+        gradientLayer.name = "gradientLayer"
         gradientLayer.frame = bounds
         gradientLayer.colors = [colorOne.cgColor, colorTwo.cgColor]
         gradientLayer.locations = [0.0, 1.0]
@@ -28,6 +29,7 @@ extension UIView {
     func setGradientBackgroundFourColors(colorOne: UIColor, colorTwo: UIColor, colorThree: UIColor, colorFour: UIColor, cornerRadius: Int) {
         
         let gradientLayer = CAGradientLayer()
+        gradientLayer.name = "gradientLayer"
         gradientLayer.frame = bounds
         gradientLayer.colors = [colorOne.cgColor, colorTwo.cgColor, colorThree.cgColor, colorFour.cgColor]
         gradientLayer.locations = [0.0, 0.3, 0.7, 1.0]

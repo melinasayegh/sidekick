@@ -39,5 +39,4 @@ struct Model {
          [OnboardingAnswer(text: "Temporary...", isSelected: false),
           OnboardingAnswer(text: "Music", isSelected: false),
           OnboardingAnswer(text: "Sports", isSelected: false)]]
-    
 }
